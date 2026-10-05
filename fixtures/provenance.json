@@ -1,0 +1,17 @@
+{
+  "dbc": {
+    "source": "Public mainnet ProgramData capture",
+    "capturedAt": "2026-10-04T15:18:54.636Z",
+    "program": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+    "programData": "HUfnSSiJxgspQm6C1rkqv6L3XgVtn7AESApgCQpCXCYh"
+  },
+  "otherBinaries": {
+    "source": "Meteora official DBC SDK test fixtures",
+    "commit": "a28b7239e71899eb52ff7aacac4dec90441885c4"
+  },
+  "hashes": {
+    "damm.so": "af48ce6be0f2c589b389751596e8b5303b5ca444e6d46708fff008e7689ab6e9",
+    "metaplex.so": "28d1fcad13c77e5c976289a6983d1258309af4a9762cf50aef80b5537732e87f",
+    "dbc.so": "4c26a8a5da99f8ce932fa0300c46675b527090021fbb74214c9486bedda9f23b"
+  }
+}

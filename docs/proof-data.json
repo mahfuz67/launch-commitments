@@ -1,0 +1,1124 @@
+{
+  "schema": "launch-commitments/public-devnet-proof/v1",
+  "network": "devnet",
+  "genesisHash": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "rpcHost": "api.devnet.solana.com",
+  "programId": "4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD",
+  "program": {
+    "programId": "4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD",
+    "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "audited": false,
+    "programData": "2ZS3LGRaNBJrkoVddkEgUapmWE9MHnoJA8o2bkAWFbjx",
+    "lastDeployedSlot": 507726160,
+    "upgradeAuthority": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV",
+    "deployedSha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+    "localBuildSha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+    "upgradeable": true,
+    "matchesLocalBuild": true
+  },
+  "startedAt": "2026-10-05T12:15:10.842Z",
+  "updatedAt": "2026-10-05T12:28:44.826Z",
+  "disclosures": [
+    "Devnet test SOL only. Every wallet here is a test wallet generated and funded by the build team. This is not usage, volume, traction or demand.",
+    "The program is upgradeable and its upgrade authority (BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV) is retained. Whoever holds that key can replace the program, including the rules that protect the vaults. The program is not audited.",
+    "The devnet preset scales the curve’s SOL amounts by 0.01. Amounts are test configurations, not valuations.",
+    "The setup budget and account rent of each campaign are paid by the organizer and are not recoverable in this version, including for a campaign that fails.",
+    "The pooled first purchase pays DBC’s 1% trading fee like any other trade, and can get a lower average price than later buyers."
+  ],
+  "fundingKey": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV",
+  "wallets": {
+    "organizer": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+    "alice": "FK965T2S8551QXFZBx6t9bRsa2oLpKrqeqeqAEum8u5c",
+    "bob": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ"
+  },
+  "options": {
+    "minutes": 3,
+    "withExpiry": true
+  },
+  "fundingPlan": {
+    "campaigns": [
+      "launch",
+      "underfunded",
+      "expiry"
+    ],
+    "setupBudgetLamports": "100000000",
+    "creationCostLamports": "110170000",
+    "receiptRentLamports": "1097280",
+    "tokenAccountRentLamports": "1488440",
+    "rentFloorLamports": "650240",
+    "perWalletLamports": {
+      "organizer": "333510000",
+      "alice": "41780280",
+      "bob": "34780280"
+    },
+    "totalLamports": "410070560",
+    "payerMustHoldLamports": "420075560",
+    "notRecoverableLamports": "353486880",
+    "note": "Setup budget and account rent of every campaign stay locked in this version, including the campaign that fails. The launch target is spent on tokens."
+  },
+  "backend": {
+    "url": "http://127.0.0.1:19190",
+    "holdsWalletKeys": false,
+    "preset": {
+      "decimals": 6,
+      "supply": "1000000000000000",
+      "migrationThreshold": "104132267",
+      "creatorTradingFeePercentage": 100,
+      "setupBudgetLamports": "100000000",
+      "settlementWindowSeconds": "600"
+    }
+  },
+  "campaigns": {
+    "launch": {
+      "address": "6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi",
+      "explorer": "https://explorer.solana.com/address/6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi?cluster=devnet",
+      "name": "LC devnet test: launch",
+      "symbol": "LCTEST",
+      "organizer": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+      "beneficiary": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+      "config": "4YVmCXSu7GrauUaSsXTRoDwRZaPwUD4XfMDDJdtXaNNF",
+      "configHash": "d1ec88e1f14756b9d7a53529eea25c905b9b4177ef319924b41e96d253ba981d",
+      "vault": "CKjScLg3fqy1a4rRAE1VwDHoZ3y5RXpRsyRCfRy2kFYN",
+      "mint": "4ogX4mWYzgrc7URZfJq4uowkWMVUZt5pNh8Ld1Qv6281",
+      "target": "20000000",
+      "minTokens": "406363068402493",
+      "closeTime": "1791202693",
+      "expiry": "1791203293",
+      "fundingWindowSeconds": "150",
+      "atClose": {
+        "total": "30000000",
+        "contributions": {
+          "alice": "18000000",
+          "bob": "12000000"
+        },
+        "receipts": "2",
+        "phase": "settleable"
+      },
+      "settled": {
+        "signature": "wzhSygj1xPeieLfh6kWzjgBajKXnQc4T6mrugoRk9V5bGjxJoSxRpqjv5SGUPYAxat2a4efJiRuXHeUWbAGeLEM",
+        "settledBy": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+        "organizerSigned": false,
+        "mint": "4ogX4mWYzgrc7URZfJq4uowkWMVUZt5pNh8Ld1Qv6281",
+        "mintExplorer": "https://explorer.solana.com/address/4ogX4mWYzgrc7URZfJq4uowkWMVUZt5pNh8Ld1Qv6281?cluster=devnet",
+        "pool": "5yz7PJnC4sYFR9LaX6mAK4JdTWxcYtCcHWYvsFmnXBDA",
+        "tokensBought": "406403708773371",
+        "minTokens": "406363068402493",
+        "vaultSpentLamports": "20000000",
+        "setupBudgetSpentLamports": "23558520",
+        "feePayer": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+        "signatures": 1
+      },
+      "allocation": {
+        "alice": {
+          "contribution": "18000000",
+          "tokens": "243842225264022",
+          "excessLamports": "6000000"
+        },
+        "bob": {
+          "contribution": "12000000",
+          "tokens": "162561483509348",
+          "excessLamports": "4000000"
+        }
+      },
+      "afterClaims": {
+        "tokensClaimed": "406403708773370",
+        "excessPaidLamports": "10000000",
+        "openReceipts": "0",
+        "tokenDustLocked": "1",
+        "lamportDustLocked": "0"
+      }
+    },
+    "underfunded": {
+      "address": "GWixPonbKCCmAE1FcMcrgRTMcuCrKrASEsm4CPKmebgG",
+      "explorer": "https://explorer.solana.com/address/GWixPonbKCCmAE1FcMcrgRTMcuCrKrASEsm4CPKmebgG?cluster=devnet",
+      "name": "LC devnet test: refund",
+      "symbol": "LCTESTR",
+      "organizer": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+      "beneficiary": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+      "config": "GnJCd5A2h8si8v1dCwBoPcwNr2Yrq8PXyZ7JM2gP8UVy",
+      "configHash": "d1ec88e1f14756b9d7a53529eea25c905b9b4177ef319924b41e96d253ba981d",
+      "vault": "Fu5bRxQHDqWcYka2QgHpGk7PsY1ZueqLkXNExgyzfWLM",
+      "mint": "2FJ3TqnFYAZHC7Yb2kdxZXLwmzssrDGGED6Xff1Wgha4",
+      "target": "50000000",
+      "minTokens": "644466499713142",
+      "closeTime": "1791202693",
+      "expiry": "1791203293",
+      "fundingWindowSeconds": "151",
+      "atClose": {
+        "total": "7000000",
+        "contributions": {
+          "alice": "4000000",
+          "bob": "3000000"
+        },
+        "receipts": "2",
+        "phase": "refundable"
+      },
+      "final": {
+        "state": "open, never launched",
+        "refundedLamports": "7000000",
+        "totalContributedLamports": "7000000",
+        "openReceipts": "0",
+        "tokenMintExists": false
+      }
+    },
+    "expiry": {
+      "address": "F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R",
+      "explorer": "https://explorer.solana.com/address/F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R?cluster=devnet",
+      "name": "LC devnet test: expiry",
+      "symbol": "LCTESTX",
+      "organizer": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+      "beneficiary": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+      "config": "4MF74QoEBw6DNwqSvBwYLNX9ZJsScvCQhPejM5nq4Y46",
+      "configHash": "d1ec88e1f14756b9d7a53529eea25c905b9b4177ef319924b41e96d253ba981d",
+      "vault": "BBB91uyY1WeJ6U4ypiDCAwYmK8uRVmYDEAeE6ZZ9RKd5",
+      "mint": "CP4ajPfUHH7Eskp1c8pymK5gwQLtcMdvXWfL9EmLeZ5T",
+      "target": "20000000",
+      "minTokens": "406363068402493",
+      "closeTime": "1791202694",
+      "expiry": "1791203294",
+      "fundingWindowSeconds": "152",
+      "atClose": {
+        "total": "22000000",
+        "contributions": {
+          "alice": "12000000",
+          "bob": "10000000"
+        },
+        "receipts": "2",
+        "phase": "settleable"
+      },
+      "final": {
+        "state": "open, never launched",
+        "refundedLamports": "22000000",
+        "totalContributedLamports": "22000000",
+        "openReceipts": "0",
+        "tokenMintExists": false
+      }
+    }
+  },
+  "transactions": [
+    {
+      "id": "fund",
+      "label": "funding key funds the three test wallets",
+      "signer": "fundingKey",
+      "address": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV",
+      "via": "backend /api/send",
+      "signature": "5CrpYmxhLCjt1iWX5LuoXraHE7cGyZBzfNWtJGrDZ8TEEwqWMkpdQFV7zZP4KkrGdq5sY137Vi1yJGbkrWLsN3fV",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973052,
+      "bytes": 313,
+      "lamports": {
+        "organizer": "333510000",
+        "alice": "41780280",
+        "bob": "34780280"
+      },
+      "explorer": "https://explorer.solana.com/tx/5CrpYmxhLCjt1iWX5LuoXraHE7cGyZBzfNWtJGrDZ8TEEwqWMkpdQFV7zZP4KkrGdq5sY137Vi1yJGbkrWLsN3fV?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728255,
+      "computeSimulated": 450,
+      "recordedAt": "2026-10-05T12:15:13.292Z"
+    },
+    {
+      "id": "create:expiry",
+      "label": "organizer creates the expiry campaign",
+      "signer": "organizer",
+      "address": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "3bt68zTjoM9Kauj4CLGYW91NXBoQesdQCFV9ZtFxqwS8JXpnohbT9rwAwWWZpPs6Snfcm1wkiTkf1SF3XVJ5tLoT",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973104,
+      "bytes": 892,
+      "campaign": "F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R",
+      "config": "4MF74QoEBw6DNwqSvBwYLNX9ZJsScvCQhPejM5nq4Y46",
+      "closeTime": "1791202694",
+      "expiry": "1791203294",
+      "disclosedCostLamports": "110170000",
+      "minimumTokens": "406363068402493",
+      "explorer": "https://explorer.solana.com/tx/3bt68zTjoM9Kauj4CLGYW91NXBoQesdQCFV9ZtFxqwS8JXpnohbT9rwAwWWZpPs6Snfcm1wkiTkf1SF3XVJ5tLoT?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728382,
+      "computeSimulated": 55053,
+      "recordedAt": "2026-10-05T12:15:43.239Z"
+    },
+    {
+      "id": "create:launch",
+      "label": "organizer creates the launch campaign",
+      "signer": "organizer",
+      "address": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "2dfxgajMc2xVUqG5Rvh2Q3qYisuB4BD7mpBbzHoYfucdDxHC8R8EXw6a8ftXEHWza26B4QNeZm7tBvU4T78eAse6",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973105,
+      "bytes": 891,
+      "campaign": "6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi",
+      "config": "4YVmCXSu7GrauUaSsXTRoDwRZaPwUD4XfMDDJdtXaNNF",
+      "closeTime": "1791202693",
+      "expiry": "1791203293",
+      "disclosedCostLamports": "110170000",
+      "minimumTokens": "406363068402493",
+      "explorer": "https://explorer.solana.com/tx/2dfxgajMc2xVUqG5Rvh2Q3qYisuB4BD7mpBbzHoYfucdDxHC8R8EXw6a8ftXEHWza26B4QNeZm7tBvU4T78eAse6?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728384,
+      "computeSimulated": 63997,
+      "recordedAt": "2026-10-05T12:15:43.737Z"
+    },
+    {
+      "id": "create:underfunded",
+      "label": "organizer creates the underfunded campaign",
+      "signer": "organizer",
+      "address": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "3wCfznj38ygN5EGjSx5wYf4sxXyNNbsTq42GKDktKbJBkKJuQjh1KqSidftw7fQP9ofG2ALbgZ78VoJRnCgH3BMp",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973175,
+      "bytes": 892,
+      "campaign": "GWixPonbKCCmAE1FcMcrgRTMcuCrKrASEsm4CPKmebgG",
+      "config": "GnJCd5A2h8si8v1dCwBoPcwNr2Yrq8PXyZ7JM2gP8UVy",
+      "closeTime": "1791202693",
+      "expiry": "1791203293",
+      "disclosedCostLamports": "110170000",
+      "minimumTokens": "644466499713142",
+      "explorer": "https://explorer.solana.com/tx/3wCfznj38ygN5EGjSx5wYf4sxXyNNbsTq42GKDktKbJBkKJuQjh1KqSidftw7fQP9ofG2ALbgZ78VoJRnCgH3BMp?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728380,
+      "computeSimulated": 62553,
+      "recordedAt": "2026-10-05T12:15:43.559Z"
+    },
+    {
+      "id": "contribute:launch:alice",
+      "label": "alice contributes 0.018 SOL to the launch campaign",
+      "signer": "alice",
+      "address": "FK965T2S8551QXFZBx6t9bRsa2oLpKrqeqeqAEum8u5c",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "TERaJbMQBP38yJJPcqHkHwEwm3t7eAzdBjaEr7xMHvxs2WpseFN7AHF7vftziEsEeFR9qXUoY4UDby7ifpwchAX",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973203,
+      "bytes": 311,
+      "campaign": "6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi",
+      "amountSol": "0.018",
+      "explorer": "https://explorer.solana.com/tx/TERaJbMQBP38yJJPcqHkHwEwm3t7eAzdBjaEr7xMHvxs2WpseFN7AHF7vftziEsEeFR9qXUoY4UDby7ifpwchAX?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728428,
+      "computeSimulated": 11362,
+      "recordedAt": "2026-10-05T12:15:54.482Z"
+    },
+    {
+      "id": "contribute:launch:bob",
+      "label": "bob contributes 0.014 SOL to the launch campaign",
+      "signer": "bob",
+      "address": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "5xkndb6xds7q5VNq3FR4Jd7xhiP9nHB278xZ7kCUBBkV4xK1cTp4j7KWoP4BWAou4JFzqszDtzzB9tN4JsKHMhEM",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973233,
+      "bytes": 311,
+      "campaign": "6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi",
+      "amountSol": "0.014",
+      "explorer": "https://explorer.solana.com/tx/5xkndb6xds7q5VNq3FR4Jd7xhiP9nHB278xZ7kCUBBkV4xK1cTp4j7KWoP4BWAou4JFzqszDtzzB9tN4JsKHMhEM?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728440,
+      "computeSimulated": 12862,
+      "recordedAt": "2026-10-05T12:15:57.219Z"
+    },
+    {
+      "id": "contribute:underfunded:alice",
+      "label": "alice contributes 0.004 SOL to the underfunded campaign",
+      "signer": "alice",
+      "address": "FK965T2S8551QXFZBx6t9bRsa2oLpKrqeqeqAEum8u5c",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "AdEMpG95oyT4mTzGTK6wqQRArmvdPdbQuFyXgAmfygRd7kfyvWM2ms2iW3g3PJ52cwRiGiSEi9qF82KujpmQ5FU",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973235,
+      "bytes": 311,
+      "campaign": "GWixPonbKCCmAE1FcMcrgRTMcuCrKrASEsm4CPKmebgG",
+      "amountSol": "0.004",
+      "explorer": "https://explorer.solana.com/tx/AdEMpG95oyT4mTzGTK6wqQRArmvdPdbQuFyXgAmfygRd7kfyvWM2ms2iW3g3PJ52cwRiGiSEi9qF82KujpmQ5FU?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728452,
+      "computeSimulated": 12862,
+      "recordedAt": "2026-10-05T12:16:00.043Z"
+    },
+    {
+      "id": "contribute:underfunded:bob",
+      "label": "bob contributes 0.003 SOL to the underfunded campaign",
+      "signer": "bob",
+      "address": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "AwG1ZhtABd7g55vZdXhhpBSo5Wv6C6VpDFM6LQxTFRtrFFGSaH1ABgk79MJukEML2ziLVgDYpxXdgM9fRi4zMLw",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973275,
+      "bytes": 311,
+      "campaign": "GWixPonbKCCmAE1FcMcrgRTMcuCrKrASEsm4CPKmebgG",
+      "amountSol": "0.003",
+      "explorer": "https://explorer.solana.com/tx/AwG1ZhtABd7g55vZdXhhpBSo5Wv6C6VpDFM6LQxTFRtrFFGSaH1ABgk79MJukEML2ziLVgDYpxXdgM9fRi4zMLw?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728504,
+      "computeSimulated": 11362,
+      "recordedAt": "2026-10-05T12:16:11.940Z"
+    },
+    {
+      "id": "contribute:expiry:alice",
+      "label": "alice contributes 0.012 SOL to the expiry campaign",
+      "signer": "alice",
+      "address": "FK965T2S8551QXFZBx6t9bRsa2oLpKrqeqeqAEum8u5c",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "2hirr8q2DjWqrnSFJfVmjMtGjwV7apFgyLygzNEaeMDyr1jrvJfJ7inMWbA7FvcZAeBA3deLUc1UwyQCrSmBSATL",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973303,
+      "bytes": 311,
+      "campaign": "F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R",
+      "amountSol": "0.012",
+      "explorer": "https://explorer.solana.com/tx/2hirr8q2DjWqrnSFJfVmjMtGjwV7apFgyLygzNEaeMDyr1jrvJfJ7inMWbA7FvcZAeBA3deLUc1UwyQCrSmBSATL?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728513,
+      "computeSimulated": 11362,
+      "recordedAt": "2026-10-05T12:16:17.893Z"
+    },
+    {
+      "id": "contribute:expiry:bob",
+      "label": "bob contributes 0.01 SOL to the expiry campaign",
+      "signer": "bob",
+      "address": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "2PvygQVnWNPrdDgdgoQmWwJL3xRaDun3aDimSHPeBi1QuivrxhjZXTq3W9HmaoZByKwxbUdncUgAXMiJpSYVT62g",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973327,
+      "bytes": 311,
+      "campaign": "F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R",
+      "amountSol": "0.01",
+      "explorer": "https://explorer.solana.com/tx/2PvygQVnWNPrdDgdgoQmWwJL3xRaDun3aDimSHPeBi1QuivrxhjZXTq3W9HmaoZByKwxbUdncUgAXMiJpSYVT62g?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728535,
+      "computeSimulated": 11362,
+      "recordedAt": "2026-10-05T12:16:19.366Z"
+    },
+    {
+      "id": "withdraw:launch:bob",
+      "label": "bob withdraws 0.002 SOL from the launch campaign before close",
+      "signer": "bob",
+      "address": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "4BBJh5j7fqdpK9w4yoKZvQBSnCBkcbx9GUDV53Yp5c7fYofCnfExqgPzJQhtNEqr3bnXDaXSxfqhT5RMrXYgu4te",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973343,
+      "bytes": 311,
+      "campaign": "6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi",
+      "amountSol": "0.002",
+      "explorer": "https://explorer.solana.com/tx/4BBJh5j7fqdpK9w4yoKZvQBSnCBkcbx9GUDV53Yp5c7fYofCnfExqgPzJQhtNEqr3bnXDaXSxfqhT5RMrXYgu4te?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507728551,
+      "computeSimulated": 9218,
+      "recordedAt": "2026-10-05T12:16:23.275Z"
+    },
+    {
+      "id": "settle:launch",
+      "label": "bob, a contributor and not the organizer, executes the launch",
+      "signer": "bob",
+      "address": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "wzhSygj1xPeieLfh6kWzjgBajKXnQc4T6mrugoRk9V5bGjxJoSxRpqjv5SGUPYAxat2a4efJiRuXHeUWbAGeLEM",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973873,
+      "bytes": 870,
+      "campaign": "6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi",
+      "explorer": "https://explorer.solana.com/tx/wzhSygj1xPeieLfh6kWzjgBajKXnQc4T6mrugoRk9V5bGjxJoSxRpqjv5SGUPYAxat2a4efJiRuXHeUWbAGeLEM?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507729085,
+      "computeSimulated": 219077,
+      "recordedAt": "2026-10-05T12:18:30.034Z"
+    },
+    {
+      "id": "claim:launch:alice",
+      "label": "alice claims tokens and excess SOL",
+      "signer": "alice",
+      "address": "FK965T2S8551QXFZBx6t9bRsa2oLpKrqeqeqAEum8u5c",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "2YLZxe1YvB9DhRk8CrQX33TD8Smu1t88otPVAJ8zj6HEF5ZgsfBmV9hWR2wbxSR7Z9pPBGnnc7aDTBH5BxFwDX1D",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973889,
+      "bytes": 476,
+      "campaign": "6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi",
+      "explorer": "https://explorer.solana.com/tx/2YLZxe1YvB9DhRk8CrQX33TD8Smu1t88otPVAJ8zj6HEF5ZgsfBmV9hWR2wbxSR7Z9pPBGnnc7aDTBH5BxFwDX1D?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507729100,
+      "computeSimulated": 25933,
+      "recordedAt": "2026-10-05T12:18:33.872Z"
+    },
+    {
+      "id": "claim:launch:bob",
+      "label": "bob claims tokens and excess SOL",
+      "signer": "bob",
+      "address": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "4MiLqRvTBqLGNGuBkbZCjPBrQk59Vx3EEP9Ae1d49hmcfGYxZuJLk4ncPM3ieKzH86q1HrRDt8iHDiFEF22Bjjgx",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973903,
+      "bytes": 476,
+      "campaign": "6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi",
+      "explorer": "https://explorer.solana.com/tx/4MiLqRvTBqLGNGuBkbZCjPBrQk59Vx3EEP9Ae1d49hmcfGYxZuJLk4ncPM3ieKzH86q1HrRDt8iHDiFEF22Bjjgx?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507729117,
+      "computeSimulated": 25933,
+      "recordedAt": "2026-10-05T12:18:37.868Z"
+    },
+    {
+      "id": "refund:underfunded:alice",
+      "label": "alice recovers her contribution from the underfunded campaign",
+      "signer": "alice",
+      "address": "FK965T2S8551QXFZBx6t9bRsa2oLpKrqeqeqAEum8u5c",
+      "via": "backend /api/prepare + /api/send",
+      "signature": "2YYCHQBymCK9Vv41ymbKfDKNrsjFBEcNawKtjGHg1CkSnDXv2RbS4HuAVRkeVboLpLc18n5oMMsP3xmNK5HT9Rfq",
+      "status": "confirmed",
+      "lastValidBlockHeight": 494973924,
+      "bytes": 303,
+      "campaign": "GWixPonbKCCmAE1FcMcrgRTMcuCrKrASEsm4CPKmebgG",
+      "explorer": "https://explorer.solana.com/tx/2YYCHQBymCK9Vv41ymbKfDKNrsjFBEcNawKtjGHg1CkSnDXv2RbS4HuAVRkeVboLpLc18n5oMMsP3xmNK5HT9Rfq?cluster=devnet",
+      "confirmation": "finalized",
+      "slot": 507729137,
+      "computeSimulated": 9277,
+      "recordedAt": "2026-10-05T12:18:42.389Z"
+    },
+    {
+      "id": "recover:underfunded:bob",
+      "label": "bob recovers 0.003 SOL from the underfunded campaign with recover.cjs",
+      "signer": "bob",
+      "address": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+      "via": "recover.cjs over RPC, no backend",
+      "status": "confirmed",
+      "campaign": "GWixPonbKCCmAE1FcMcrgRTMcuCrKrASEsm4CPKmebgG",
+      "command": "node recover.cjs --rpc [rpc] --program 4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD --campaign GWixPonbKCCmAE1FcMcrgRTMcuCrKrASEsm4CPKmebgG --keypair [bob key file] --action refund --send",
+      "signature": "4b8EDpkmVsN8qWMxvpVgUFGiv5zU1L7bRctaLKi13Y3QbUK1vE7yeuRAnChYRYjLCsW9noih4kLa5CqbJ3HAzp9Y",
+      "confirmation": "finalized",
+      "slot": 507729285,
+      "explorer": "https://explorer.solana.com/tx/4b8EDpkmVsN8qWMxvpVgUFGiv5zU1L7bRctaLKi13Y3QbUK1vE7yeuRAnChYRYjLCsW9noih4kLa5CqbJ3HAzp9Y?cluster=devnet",
+      "recordedAt": "2026-10-05T12:19:19.283Z"
+    },
+    {
+      "id": "recover:expiry:alice",
+      "label": "alice recovers 0.012 SOL from the expiry campaign with recover.cjs",
+      "signer": "alice",
+      "address": "FK965T2S8551QXFZBx6t9bRsa2oLpKrqeqeqAEum8u5c",
+      "via": "recover.cjs over RPC, no backend",
+      "status": "confirmed",
+      "campaign": "F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R",
+      "command": "node recover.cjs --rpc [rpc] --program 4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD --campaign F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R --keypair [alice key file] --action refund --send",
+      "signature": "4qKmWA6UdS8oitnpksAyWieyb6yGDGCvPb7vqzD3SS6JTFSjnLiEBPGu628DRWPLNem2c7JPmmimmzM4qCy4hneX",
+      "confirmation": "finalized",
+      "slot": 507731581,
+      "explorer": "https://explorer.solana.com/tx/4qKmWA6UdS8oitnpksAyWieyb6yGDGCvPb7vqzD3SS6JTFSjnLiEBPGu628DRWPLNem2c7JPmmimmzM4qCy4hneX?cluster=devnet",
+      "recordedAt": "2026-10-05T12:28:26.837Z"
+    },
+    {
+      "id": "recover:expiry:bob",
+      "label": "bob recovers 0.01 SOL from the expiry campaign with recover.cjs",
+      "signer": "bob",
+      "address": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+      "via": "recover.cjs over RPC, no backend",
+      "status": "confirmed",
+      "campaign": "F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R",
+      "command": "node recover.cjs --rpc [rpc] --program 4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD --campaign F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R --keypair [bob key file] --action refund --send",
+      "signature": "2LsbjhAUSrMVof9ozJhvMjMa1KyBMGpMWJqDzKgFLzE6eNRJDzhh6jfMZGpZR34UcBJEYNesvGNhbpYfPGnXtokU",
+      "confirmation": "finalized",
+      "slot": 507731615,
+      "explorer": "https://explorer.solana.com/tx/2LsbjhAUSrMVof9ozJhvMjMa1KyBMGpMWJqDzKgFLzE6eNRJDzhh6jfMZGpZR34UcBJEYNesvGNhbpYfPGnXtokU?cluster=devnet",
+      "recordedAt": "2026-10-05T12:28:34.761Z"
+    }
+  ],
+  "refusals": [
+    {
+      "id": "refusal:early-settle",
+      "label": "launching before the funding window closes",
+      "expected": "FundingStillOpen",
+      "observed": "FundingStillOpen",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:16:25.569Z"
+    },
+    {
+      "id": "refusal:early-refund",
+      "label": "refunding before the funding window closes",
+      "expected": "RefundNotAvailable",
+      "observed": "RefundNotAvailable",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:16:27.190Z"
+    },
+    {
+      "id": "refusal:late-contribution",
+      "label": "contributing after the funding window closed",
+      "expected": "FundingClosed",
+      "observed": "FundingClosed",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:18:23.274Z"
+    },
+    {
+      "id": "refusal:settle-underfunded",
+      "label": "launching the underfunded campaign",
+      "expected": "TargetNotReached",
+      "observed": "TargetNotReached",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:18:24.559Z"
+    },
+    {
+      "id": "refusal:refund-before-expiry",
+      "label": "refunding a funded campaign before its expiry",
+      "expected": "RefundNotAvailable",
+      "observed": "RefundNotAvailable",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:18:26.866Z"
+    },
+    {
+      "id": "refusal:second-claim",
+      "label": "claiming a second time",
+      "expected": "any refusal",
+      "observed": "InvalidAccountOwner",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:18:39.422Z"
+    },
+    {
+      "id": "refusal:second-refund",
+      "label": "refunding a second time",
+      "expected": "any refusal",
+      "observed": "InvalidAccountOwner",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:18:43.713Z"
+    },
+    {
+      "id": "refusal:recover:underfunded:bob:again",
+      "label": "recover.cjs asked to refund bob a second time",
+      "expected": "refused before any transaction is built",
+      "observed": "No refundable receipt at the current chain time.",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:28:42.195Z"
+    },
+    {
+      "id": "refusal:settle-after-expiry",
+      "label": "launching the funded campaign after its expiry",
+      "expected": "SettlementExpired",
+      "observed": "SettlementExpired",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:28:20.203Z"
+    },
+    {
+      "id": "refusal:recover:expiry:alice:again",
+      "label": "recover.cjs asked to refund alice a second time",
+      "expected": "refused before any transaction is built",
+      "observed": "No refundable receipt at the current chain time.",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:28:43.511Z"
+    },
+    {
+      "id": "refusal:recover:expiry:bob:again",
+      "label": "recover.cjs asked to refund bob a second time",
+      "expected": "refused before any transaction is built",
+      "observed": "No refundable receipt at the current chain time.",
+      "broadcast": false,
+      "checkedAt": "2026-10-05T12:28:44.826Z"
+    }
+  ],
+  "checks": [
+    {
+      "id": "terms:launch",
+      "ok": true,
+      "detail": {
+        "address": "6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi",
+        "explorer": "https://explorer.solana.com/address/6yxt68MpGGjDoLsMHt3HRqX5ufEiyeKx4MvNaF6RMigi?cluster=devnet",
+        "name": "LC devnet test: launch",
+        "symbol": "LCTEST",
+        "organizer": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+        "beneficiary": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+        "config": "4YVmCXSu7GrauUaSsXTRoDwRZaPwUD4XfMDDJdtXaNNF",
+        "configHash": "d1ec88e1f14756b9d7a53529eea25c905b9b4177ef319924b41e96d253ba981d",
+        "vault": "CKjScLg3fqy1a4rRAE1VwDHoZ3y5RXpRsyRCfRy2kFYN",
+        "mint": "4ogX4mWYzgrc7URZfJq4uowkWMVUZt5pNh8Ld1Qv6281",
+        "target": "20000000",
+        "minTokens": "406363068402493",
+        "closeTime": "1791202693",
+        "expiry": "1791203293",
+        "fundingWindowSeconds": "150",
+        "configMatchesHash": true,
+        "presetViolations": []
+      },
+      "checkedAt": "2026-10-05T12:16:23.609Z"
+    },
+    {
+      "id": "terms:underfunded",
+      "ok": true,
+      "detail": {
+        "address": "GWixPonbKCCmAE1FcMcrgRTMcuCrKrASEsm4CPKmebgG",
+        "explorer": "https://explorer.solana.com/address/GWixPonbKCCmAE1FcMcrgRTMcuCrKrASEsm4CPKmebgG?cluster=devnet",
+        "name": "LC devnet test: refund",
+        "symbol": "LCTESTR",
+        "organizer": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+        "beneficiary": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+        "config": "GnJCd5A2h8si8v1dCwBoPcwNr2Yrq8PXyZ7JM2gP8UVy",
+        "configHash": "d1ec88e1f14756b9d7a53529eea25c905b9b4177ef319924b41e96d253ba981d",
+        "vault": "Fu5bRxQHDqWcYka2QgHpGk7PsY1ZueqLkXNExgyzfWLM",
+        "mint": "2FJ3TqnFYAZHC7Yb2kdxZXLwmzssrDGGED6Xff1Wgha4",
+        "target": "50000000",
+        "minTokens": "644466499713142",
+        "closeTime": "1791202693",
+        "expiry": "1791203293",
+        "fundingWindowSeconds": "151",
+        "configMatchesHash": true,
+        "presetViolations": []
+      },
+      "checkedAt": "2026-10-05T12:16:23.950Z"
+    },
+    {
+      "id": "terms:expiry",
+      "ok": true,
+      "detail": {
+        "address": "F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R",
+        "explorer": "https://explorer.solana.com/address/F65XtHFrwYqNxM1KmqifdCYhvVY65ZvcLPENCQXt8s7R?cluster=devnet",
+        "name": "LC devnet test: expiry",
+        "symbol": "LCTESTX",
+        "organizer": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+        "beneficiary": "3cna3FP8ZkXYmDr3Jo95c4pVtG4Kn4RteHCxBQexGENB",
+        "config": "4MF74QoEBw6DNwqSvBwYLNX9ZJsScvCQhPejM5nq4Y46",
+        "configHash": "d1ec88e1f14756b9d7a53529eea25c905b9b4177ef319924b41e96d253ba981d",
+        "vault": "BBB91uyY1WeJ6U4ypiDCAwYmK8uRVmYDEAeE6ZZ9RKd5",
+        "mint": "CP4ajPfUHH7Eskp1c8pymK5gwQLtcMdvXWfL9EmLeZ5T",
+        "target": "20000000",
+        "minTokens": "406363068402493",
+        "closeTime": "1791202694",
+        "expiry": "1791203294",
+        "fundingWindowSeconds": "152",
+        "configMatchesHash": true,
+        "presetViolations": []
+      },
+      "checkedAt": "2026-10-05T12:16:24.294Z"
+    },
+    {
+      "id": "at-close:launch",
+      "ok": true,
+      "detail": {
+        "total": "30000000",
+        "contributions": {
+          "alice": "18000000",
+          "bob": "12000000"
+        },
+        "receipts": "2",
+        "phase": "settleable"
+      },
+      "checkedAt": "2026-10-05T12:18:20.731Z"
+    },
+    {
+      "id": "at-close:underfunded",
+      "ok": true,
+      "detail": {
+        "total": "7000000",
+        "contributions": {
+          "alice": "4000000",
+          "bob": "3000000"
+        },
+        "receipts": "2",
+        "phase": "refundable"
+      },
+      "checkedAt": "2026-10-05T12:18:20.731Z"
+    },
+    {
+      "id": "at-close:expiry",
+      "ok": true,
+      "detail": {
+        "total": "22000000",
+        "contributions": {
+          "alice": "12000000",
+          "bob": "10000000"
+        },
+        "receipts": "2",
+        "phase": "settleable"
+      },
+      "checkedAt": "2026-10-05T12:18:20.732Z"
+    },
+    {
+      "id": "launch:settled",
+      "ok": true,
+      "detail": {
+        "signature": "wzhSygj1xPeieLfh6kWzjgBajKXnQc4T6mrugoRk9V5bGjxJoSxRpqjv5SGUPYAxat2a4efJiRuXHeUWbAGeLEM",
+        "settledBy": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+        "organizerSigned": false,
+        "mint": "4ogX4mWYzgrc7URZfJq4uowkWMVUZt5pNh8Ld1Qv6281",
+        "mintExplorer": "https://explorer.solana.com/address/4ogX4mWYzgrc7URZfJq4uowkWMVUZt5pNh8Ld1Qv6281?cluster=devnet",
+        "pool": "5yz7PJnC4sYFR9LaX6mAK4JdTWxcYtCcHWYvsFmnXBDA",
+        "tokensBought": "406403708773371",
+        "minTokens": "406363068402493",
+        "vaultSpentLamports": "20000000",
+        "setupBudgetSpentLamports": "23558520",
+        "feePayer": "65oSmX8GM5q1im3DcErtdeEfUwf5HQc1YKgE6HMeksgQ",
+        "signatures": 1
+      },
+      "checkedAt": "2026-10-05T12:18:30.386Z"
+    },
+    {
+      "id": "claim:launch:alice",
+      "ok": true,
+      "detail": {
+        "signature": "2YLZxe1YvB9DhRk8CrQX33TD8Smu1t88otPVAJ8zj6HEF5ZgsfBmV9hWR2wbxSR7Z9pPBGnnc7aDTBH5BxFwDX1D",
+        "feeLamports": "5000",
+        "vaultPaidLamports": "6000000",
+        "expectedFromVaultLamports": "6000000",
+        "walletChangeLamports": "5603840",
+        "receiptRentReturnedLamports": "1097280",
+        "receiptClosed": true,
+        "tokenAccountRentPaidLamports": "1488440",
+        "tokensReceived": "243842225264022",
+        "expectedTokens": "243842225264022"
+      },
+      "checkedAt": "2026-10-05T12:18:34.063Z"
+    },
+    {
+      "id": "claim:launch:bob",
+      "ok": true,
+      "detail": {
+        "signature": "4MiLqRvTBqLGNGuBkbZCjPBrQk59Vx3EEP9Ae1d49hmcfGYxZuJLk4ncPM3ieKzH86q1HrRDt8iHDiFEF22Bjjgx",
+        "feeLamports": "5000",
+        "vaultPaidLamports": "4000000",
+        "expectedFromVaultLamports": "4000000",
+        "walletChangeLamports": "3603840",
+        "receiptRentReturnedLamports": "1097280",
+        "receiptClosed": true,
+        "tokenAccountRentPaidLamports": "1488440",
+        "tokensReceived": "162561483509348",
+        "expectedTokens": "162561483509348"
+      },
+      "checkedAt": "2026-10-05T12:18:38.053Z"
+    },
+    {
+      "id": "launch:pro-rata",
+      "ok": true,
+      "detail": {
+        "tokensClaimed": "406403708773370",
+        "excessPaidLamports": "10000000",
+        "openReceipts": "0",
+        "tokenDustLocked": "1",
+        "lamportDustLocked": "0",
+        "allocation": {
+          "alice": {
+            "contribution": "18000000",
+            "tokens": "243842225264022",
+            "excessLamports": "6000000"
+          },
+          "bob": {
+            "contribution": "12000000",
+            "tokens": "162561483509348",
+            "excessLamports": "4000000"
+          }
+        },
+        "tokensBought": "406403708773371",
+        "totalContributed": "30000000",
+        "target": "20000000"
+      },
+      "checkedAt": "2026-10-05T12:18:38.301Z"
+    },
+    {
+      "id": "refund:underfunded:alice",
+      "ok": true,
+      "detail": {
+        "signature": "2YYCHQBymCK9Vv41ymbKfDKNrsjFBEcNawKtjGHg1CkSnDXv2RbS4HuAVRkeVboLpLc18n5oMMsP3xmNK5HT9Rfq",
+        "feeLamports": "5000",
+        "vaultPaidLamports": "4000000",
+        "expectedFromVaultLamports": "4000000",
+        "walletChangeLamports": "5092280",
+        "receiptRentReturnedLamports": "1097280",
+        "receiptClosed": true,
+        "tokenAccountRentPaidLamports": "0"
+      },
+      "checkedAt": "2026-10-05T12:18:42.567Z"
+    },
+    {
+      "id": "underfunded:first-refund",
+      "ok": true,
+      "detail": {
+        "refundedLamports": "4000000",
+        "openReceipts": "1",
+        "bobStillOwedLamports": "3000000"
+      },
+      "checkedAt": "2026-10-05T12:18:43.898Z"
+    },
+    {
+      "id": "recover:underfunded:bob:cli-sees-refund",
+      "ok": true,
+      "detail": {
+        "phase": "refundable",
+        "receiptLamports": "3000000",
+        "configMatches": true,
+        "chainTime": 1791202753
+      },
+      "checkedAt": "2026-10-05T12:19:14.106Z"
+    },
+    {
+      "id": "recover:underfunded:bob",
+      "ok": true,
+      "detail": {
+        "signature": "4b8EDpkmVsN8qWMxvpVgUFGiv5zU1L7bRctaLKi13Y3QbUK1vE7yeuRAnChYRYjLCsW9noih4kLa5CqbJ3HAzp9Y",
+        "feeLamports": "5000",
+        "vaultPaidLamports": "3000000",
+        "expectedFromVaultLamports": "3000000",
+        "walletChangeLamports": "4092280",
+        "receiptRentReturnedLamports": "1097280",
+        "receiptClosed": true,
+        "tokenAccountRentPaidLamports": "0"
+      },
+      "checkedAt": "2026-10-05T12:19:19.457Z"
+    },
+    {
+      "id": "underfunded:fully-refunded",
+      "ok": true,
+      "detail": {
+        "state": "open, never launched",
+        "refundedLamports": "7000000",
+        "totalContributedLamports": "7000000",
+        "openReceipts": "0",
+        "tokenMintExists": false
+      },
+      "checkedAt": "2026-10-05T12:19:21.559Z"
+    },
+    {
+      "id": "expiry:funded-and-unlaunched",
+      "ok": true,
+      "detail": {
+        "totalContributedLamports": "22000000",
+        "targetLamports": "20000000",
+        "expiry": "1791203294"
+      },
+      "checkedAt": "2026-10-05T12:28:19.848Z"
+    },
+    {
+      "id": "recover:expiry:alice:cli-sees-refund",
+      "ok": true,
+      "detail": {
+        "phase": "refundable",
+        "receiptLamports": "12000000",
+        "configMatches": true,
+        "chainTime": 1791203300
+      },
+      "checkedAt": "2026-10-05T12:28:21.617Z"
+    },
+    {
+      "id": "recover:expiry:alice",
+      "ok": true,
+      "detail": {
+        "signature": "4qKmWA6UdS8oitnpksAyWieyb6yGDGCvPb7vqzD3SS6JTFSjnLiEBPGu628DRWPLNem2c7JPmmimmzM4qCy4hneX",
+        "feeLamports": "5000",
+        "vaultPaidLamports": "12000000",
+        "expectedFromVaultLamports": "12000000",
+        "walletChangeLamports": "13092280",
+        "receiptRentReturnedLamports": "1097280",
+        "receiptClosed": true,
+        "tokenAccountRentPaidLamports": "0"
+      },
+      "checkedAt": "2026-10-05T12:28:27.011Z"
+    },
+    {
+      "id": "recover:expiry:bob:cli-sees-refund",
+      "ok": true,
+      "detail": {
+        "phase": "refundable",
+        "receiptLamports": "10000000",
+        "configMatches": true,
+        "chainTime": 1791203309
+      },
+      "checkedAt": "2026-10-05T12:28:30.233Z"
+    },
+    {
+      "id": "recover:expiry:bob",
+      "ok": true,
+      "detail": {
+        "signature": "2LsbjhAUSrMVof9ozJhvMjMa1KyBMGpMWJqDzKgFLzE6eNRJDzhh6jfMZGpZR34UcBJEYNesvGNhbpYfPGnXtokU",
+        "feeLamports": "5000",
+        "vaultPaidLamports": "10000000",
+        "expectedFromVaultLamports": "10000000",
+        "walletChangeLamports": "11092280",
+        "receiptRentReturnedLamports": "1097280",
+        "receiptClosed": true,
+        "tokenAccountRentPaidLamports": "0"
+      },
+      "checkedAt": "2026-10-05T12:28:34.935Z"
+    },
+    {
+      "id": "expiry:fully-refunded",
+      "ok": true,
+      "detail": {
+        "state": "open, never launched",
+        "refundedLamports": "22000000",
+        "totalContributedLamports": "22000000",
+        "openReceipts": "0",
+        "tokenMintExists": false
+      },
+      "checkedAt": "2026-10-05T12:28:37.080Z"
+    }
+  ],
+  "warnings": [],
+  "phases": {
+    "launch": {
+      "status": "complete",
+      "startedAt": "2026-10-05T12:15:10.842Z",
+      "completedAt": "2026-10-05T12:18:43.899Z"
+    },
+    "refund-recovery": {
+      "status": "complete",
+      "startedAt": "2026-10-05T12:19:12.788Z",
+      "backend": {
+        "backendReachable": false,
+        "probe": "http://127.0.0.1:19190/api/environment",
+        "result": "ECONNREFUSED",
+        "checkedAt": "2026-10-05T12:19:12.787Z"
+      },
+      "completedAt": "2026-10-05T12:19:21.560Z"
+    },
+    "expiry-recovery": {
+      "status": "complete",
+      "startedAt": "2026-10-05T12:19:45.547Z",
+      "backend": {
+        "backendReachable": false,
+        "probe": "http://127.0.0.1:19190/api/environment",
+        "result": "ECONNREFUSED",
+        "checkedAt": "2026-10-05T12:19:45.546Z"
+      },
+      "completedAt": "2026-10-05T12:28:37.080Z"
+    }
+  },
+  "notDemonstrated": [
+    "Public trading on the curve, graduation and DAMM v2 migration: not run on devnet in this proof. Tested against a local validator only (tests/devnet-api.cjs).",
+    "Signing with a real wallet extension, any participant outside the build team, and any mainnet use."
+  ],
+  "result": {
+    "passed": true,
+    "completedAt": "2026-10-05T12:28:37.081Z",
+    "demonstrated": [
+      "Two campaigns open at the same time with a real funding window, one reaching its target and one not.",
+      "Launch executed by a contributor without the organizer; the vault spent exactly the target.",
+      "Pro rata token and excess-SOL claims, checked against each transaction’s recorded balances.",
+      "Refund of the underfunded campaign through the backend, and again through recover.cjs with the backend stopped.",
+      "Refund of a funded campaign that nobody launched, after its expiry, through recover.cjs with the backend stopped."
+    ],
+    "confirmedTransactions": 18,
+    "refusalsSimulated": 11,
+    "warnings": 0
+  },
+  "verification": {
+    "checkedAt": "2026-10-05T12:28:44.826Z",
+    "sent": "nothing",
+    "everyConfirmedTransactionFinalized": true,
+    "transactions": [
+      {
+        "id": "fund",
+        "signature": "5CrpYmxhLCjt1iWX5LuoXraHE7cGyZBzfNWtJGrDZ8TEEwqWMkpdQFV7zZP4KkrGdq5sY137Vi1yJGbkrWLsN3fV",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "create:expiry",
+        "signature": "3bt68zTjoM9Kauj4CLGYW91NXBoQesdQCFV9ZtFxqwS8JXpnohbT9rwAwWWZpPs6Snfcm1wkiTkf1SF3XVJ5tLoT",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "create:launch",
+        "signature": "2dfxgajMc2xVUqG5Rvh2Q3qYisuB4BD7mpBbzHoYfucdDxHC8R8EXw6a8ftXEHWza26B4QNeZm7tBvU4T78eAse6",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "create:underfunded",
+        "signature": "3wCfznj38ygN5EGjSx5wYf4sxXyNNbsTq42GKDktKbJBkKJuQjh1KqSidftw7fQP9ofG2ALbgZ78VoJRnCgH3BMp",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "contribute:launch:alice",
+        "signature": "TERaJbMQBP38yJJPcqHkHwEwm3t7eAzdBjaEr7xMHvxs2WpseFN7AHF7vftziEsEeFR9qXUoY4UDby7ifpwchAX",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "contribute:launch:bob",
+        "signature": "5xkndb6xds7q5VNq3FR4Jd7xhiP9nHB278xZ7kCUBBkV4xK1cTp4j7KWoP4BWAou4JFzqszDtzzB9tN4JsKHMhEM",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "contribute:underfunded:alice",
+        "signature": "AdEMpG95oyT4mTzGTK6wqQRArmvdPdbQuFyXgAmfygRd7kfyvWM2ms2iW3g3PJ52cwRiGiSEi9qF82KujpmQ5FU",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "contribute:underfunded:bob",
+        "signature": "AwG1ZhtABd7g55vZdXhhpBSo5Wv6C6VpDFM6LQxTFRtrFFGSaH1ABgk79MJukEML2ziLVgDYpxXdgM9fRi4zMLw",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "contribute:expiry:alice",
+        "signature": "2hirr8q2DjWqrnSFJfVmjMtGjwV7apFgyLygzNEaeMDyr1jrvJfJ7inMWbA7FvcZAeBA3deLUc1UwyQCrSmBSATL",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "contribute:expiry:bob",
+        "signature": "2PvygQVnWNPrdDgdgoQmWwJL3xRaDun3aDimSHPeBi1QuivrxhjZXTq3W9HmaoZByKwxbUdncUgAXMiJpSYVT62g",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "withdraw:launch:bob",
+        "signature": "4BBJh5j7fqdpK9w4yoKZvQBSnCBkcbx9GUDV53Yp5c7fYofCnfExqgPzJQhtNEqr3bnXDaXSxfqhT5RMrXYgu4te",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "settle:launch",
+        "signature": "wzhSygj1xPeieLfh6kWzjgBajKXnQc4T6mrugoRk9V5bGjxJoSxRpqjv5SGUPYAxat2a4efJiRuXHeUWbAGeLEM",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "claim:launch:alice",
+        "signature": "2YLZxe1YvB9DhRk8CrQX33TD8Smu1t88otPVAJ8zj6HEF5ZgsfBmV9hWR2wbxSR7Z9pPBGnnc7aDTBH5BxFwDX1D",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "claim:launch:bob",
+        "signature": "4MiLqRvTBqLGNGuBkbZCjPBrQk59Vx3EEP9Ae1d49hmcfGYxZuJLk4ncPM3ieKzH86q1HrRDt8iHDiFEF22Bjjgx",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "refund:underfunded:alice",
+        "signature": "2YYCHQBymCK9Vv41ymbKfDKNrsjFBEcNawKtjGHg1CkSnDXv2RbS4HuAVRkeVboLpLc18n5oMMsP3xmNK5HT9Rfq",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "recover:underfunded:bob",
+        "signature": "4b8EDpkmVsN8qWMxvpVgUFGiv5zU1L7bRctaLKi13Y3QbUK1vE7yeuRAnChYRYjLCsW9noih4kLa5CqbJ3HAzp9Y",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "recover:expiry:alice",
+        "signature": "4qKmWA6UdS8oitnpksAyWieyb6yGDGCvPb7vqzD3SS6JTFSjnLiEBPGu628DRWPLNem2c7JPmmimmzM4qCy4hneX",
+        "recorded": "confirmed",
+        "now": "finalized"
+      },
+      {
+        "id": "recover:expiry:bob",
+        "signature": "2LsbjhAUSrMVof9ozJhvMjMa1KyBMGpMWJqDzKgFLzE6eNRJDzhh6jfMZGpZR34UcBJEYNesvGNhbpYfPGnXtokU",
+        "recorded": "confirmed",
+        "now": "finalized"
+      }
+    ],
+    "programUnchangedSinceRunStarted": true,
+    "program": {
+      "lastDeployedSlot": 507726160,
+      "deployedSha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+      "upgradeAuthority": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV"
+    },
+    "programAtRunStart": {
+      "lastDeployedSlot": 507726160,
+      "deployedSha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+      "upgradeAuthority": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV"
+    },
+    "secondRefundsStillRefused": true
+  }
+}

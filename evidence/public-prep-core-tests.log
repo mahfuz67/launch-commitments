@@ -1,0 +1,46 @@
+
+> launch-commitments@0.1.0 test:core
+> node --test tests/*.test.cjs sdk/selftest.test.cjs
+
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+✔ DBC preset config: created by the official SDK, decoded identically, accepted (17.243292ms)
+✔ funded and oversubscribed: settle once, claim pro rata, nothing left owed (80.850792ms)
+✔ underfunded: no settlement, every contributor refunds exactly their principal (19.905917ms)
+✔ funded but not settled before expiry: settlement closes, refunds open (14.4015ms)
+✔ settlement refuses substituted programs and accounts, then still works; pre-funded addresses do not block (59.49275ms)
+✔ lamports sent early to settlement addresses, synced or not, do not block settlement (17.134375ms)
+✔ forged program-owned accounts at non-canonical addresses are refused (12.9135ms)
+✔ one-lamport contributions: allocated by the same floor rule, never more than owed (22.961958ms)
+✔ creation rejects unsupported terms (38.480833ms)
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+✔ oversubscribed launch: any settler, real DBC purchase, exact pro-rata tokens and excess, one claim each (146.684292ms)
+✔ underfunded round refunds full accounted principal at close, no DBC dependency (51.572084ms)
+✔ funded but abandoned launch becomes refundable exactly at expiry (51.887667ms)
+✔ withdrawals reopen receipt safely before close; deposit and withdrawal both reject at close (53.594958ms)
+✔ an impossible promised output rolls back mint, pool, principal and rent; expiry refund still works (47.3595ms)
+✔ direct donations do not buy entitlement, count toward the target, or increase refunds (46.356542ms)
+✔ substituted recipient cannot withdraw another contribution (40.6635ms)
+✔ substituted system program and settlement token destination are rejected (51.842833ms)
+✔ configuration bytes changed after funding cannot be settled, and refund remains available (42.922875ms)
+✔ random withdrawal/deposit schedules conserve accounted principal before a failed launch (155.061208ms)
+✔ deployment verifies actual reviewed bytes and discloses retained authority (36.074541ms)
+✔ deployment rejects byte substitution and nonzero trailing payload (1.753625ms)
+✔ deployment rejects substituted loader-owned accounts and malformed authority state (2.714167ms)
+✔ validator legacy-loader deployment is verified without inventing an authority (1.815333ms)
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+Lifecycle evidence {"settlement":{"bytes":870,"compute":205156},"migration":{"bytes":1139,"compute":144952},"dammTrade":{"bytes":619,"compute":35436}}
+Lifecycle evidence {"settlement":{"bytes":870,"compute":205155},"migration":{"bytes":1139,"compute":138994},"dammTrade":{"bytes":619,"compute":35448}}
+✔ launched allocation trades on DBC, graduates, migrates and trades on DAMM v2 (scale 1) (148.031625ms)
+✔ launched allocation trades on DBC, graduates, migrates and trades on DAMM v2 (scale 0.01) (84.73225ms)
+✔ unsynchronized SOL donation to precreated vault WSOL account cannot block settlement (52.742792ms)
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+✔ server-independent recovery discovers entitlement and refunds via chain accounts alone (115.257625ms)
+✔ Wallet Standard signing preserves message and config co-signature; altered or incomplete results reject (85.817875ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 973.460792

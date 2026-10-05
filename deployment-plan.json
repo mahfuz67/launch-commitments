@@ -1,0 +1,14 @@
+{
+  "network": "devnet",
+  "status": "not deployed",
+  "programId": "4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD",
+  "payer": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV",
+  "upgradeAuthority": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV",
+  "sha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+  "bytes": 98728,
+  "balanceLamports": 3994655840,
+  "conservativeUpfrontLamports": 1355626640,
+  "allowanceForTestFlowsLamports": 350000000,
+  "bufferRentReturnedOnSuccess": true,
+  "upgradeAuthorityRetained": true
+}

@@ -1,0 +1,12 @@
+// Read-only inspection. Never requests funding or sends a transaction.
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const {Connection,PublicKey}=require('@solana/web3.js');
+const GENESIS='EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG';
+(async()=>{
+ const c=new Connection('https://api.devnet.solana.com','confirmed');if(await c.getGenesisHash()!==GENESIS)throw Error('Wrong cluster');
+ const entries=[['dbc','dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN'],['damm','cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG'],['metaplex','metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s']];
+ const report={capturedAt:new Date().toISOString(),network:'devnet',readOnly:true,programs:[],payer:'BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV'};fs.mkdirSync('fixtures-devnet',{recursive:true});
+ for(const [name,address]of entries){const a=await c.getAccountInfo(new PublicKey(address));if(!a?.executable)throw Error(name+' missing or not executable');if(a.data.readUInt32LE(0)!==2)throw Error('Unexpected loader layout');const dataAddress=new PublicKey(a.data.subarray(4,36)),d=await c.getAccountInfo(dataAddress);if(!d||d.data.readUInt32LE(0)!==3)throw Error('Missing ProgramData');const bytes=d.data.subarray(45),hash=crypto.createHash('sha256').update(bytes).digest('hex'),fixtureHash=crypto.createHash('sha256').update(fs.readFileSync(path.join('fixtures',name+'.so'))).digest('hex');fs.writeFileSync(path.join('fixtures-devnet',name+'.so'),bytes);report.programs.push({name,address,programData:dataAddress.toBase58(),sha256:hash,matchesOriginalFixture:hash===fixtureHash,bytes:bytes.length});}
+ const configKey=new PublicKey('Hv8Lmzmnju6m7kcokVKvwqz7QPmdX9XfKjJsXz8RXcjp'),config=await c.getAccountInfo(configKey);report.migrationConfigPresent=!!config;report.migrationConfigOwner=config?.owner.toBase58();if(config)fs.writeFileSync('fixtures-devnet/damm-config.json',JSON.stringify({pubkey:configKey.toBase58(),account:{...config,owner:config.owner.toBase58(),data:[config.data.toString('base64'),'base64']}},null,2));
+ report.dbcAuthorityLamports=await c.getBalance(new PublicKey('FhVo3mqL8PW5pH5U2CN4XE33DokiyZnUwuGpH2hmHLuM'));report.payerLamports=await c.getBalance(new PublicKey(report.payer));fs.writeFileSync('devnet-preflight.json',JSON.stringify(report,null,2));fs.writeFileSync('fixtures-devnet/provenance.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));
+})().catch(e=>{console.error(e.message);process.exitCode=1;});

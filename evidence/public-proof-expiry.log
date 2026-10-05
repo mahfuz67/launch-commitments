@@ -1,0 +1,37 @@
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+[expiry-recovery] devnet verified at api.devnet.solana.com; program 4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD; run directory private/public-proof
+[expiry-recovery] waiting for the funded campaign to expire: 512s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 490s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 468s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 446s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 425s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 403s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 383s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 361s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 337s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 315s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 293s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 272s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 250s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 229s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 206s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 184s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 163s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 142s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 121s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 100s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 78s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 56s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 33s of chain time left
+[expiry-recovery] waiting for the funded campaign to expire: 11s of chain time left
+[expiry-recovery] ok: expiry:funded-and-unlaunched
+[expiry-recovery] refused as expected (SettlementExpired): launching the funded campaign after its expiry
+[expiry-recovery] ok: recover:expiry:alice:cli-sees-refund
+[expiry-recovery] alice recovers 0.012 SOL from the expiry campaign with recover.cjs: 4qKmWA6UdS8oitnpksAyWieyb6yGDGCvPb7vqzD3SS6JTFSjnLiEBPGu628DRWPLNem2c7JPmmimmzM4qCy4hneX
+[expiry-recovery] ok: recover:expiry:alice
+[expiry-recovery] ok: recover:expiry:bob:cli-sees-refund
+[expiry-recovery] bob recovers 0.01 SOL from the expiry campaign with recover.cjs: 2LsbjhAUSrMVof9ozJhvMjMa1KyBMGpMWJqDzKgFLzE6eNRJDzhh6jfMZGpZR34UcBJEYNesvGNhbpYfPGnXtokU
+[expiry-recovery] ok: recover:expiry:bob
+[expiry-recovery] ok: expiry:fully-refunded
+
+Expiry recovery complete without the backend. Evidence: private/public-proof/public-evidence.json

@@ -1,0 +1,22 @@
+[package]
+name = "launch-commitments"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+custom-heap = []
+custom-panic = []
+
+[dependencies]
+solana-program = "=3.0.0"
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
+
+[workspace]

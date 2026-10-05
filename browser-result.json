@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "flows": [
+    "create",
+    "contribute",
+    "advance close",
+    "settle",
+    "claim excess and tokens",
+    "DBC sell",
+    "DBC graduation",
+    "DAMM migration",
+    "DAMM sell",
+    "withdraw and redeposit",
+    "underfunded refund"
+  ],
+  "pageErrors": [],
+  "mobileOverflow": false
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "network": "local Agave validator",
+  "version": {
+    "feature-set": 1620780344,
+    "solana-core": "3.1.10"
+  },
+  "programId": "4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD",
+  "campaigns": {
+    "launched": "AMUV2792oG8vNMnEtyvrnNSwhkj4P5HWAAYuotUjD51b",
+    "refunded": "6LCUMr1Zn68ZPEQS5Ao8dCSusuXUyzN5t4jtVDSWkJwp"
+  },
+  "transactions": [
+    "5wCnMwRcsGmAbLcBn9wDCumDABcBxUQFdLEyGC968cdzGqkfPF33wcM7WCZxY22VzaNR9Sq9VTNueZUVKBKBvXU5",
+    "2XAeKiaFETWkc14rUawM47qFAFzGETStvNxxSpWns9udgDMLbKvoMcwHYqs7m8Hqt1guhw6zVNjWD3VDg5GBQ8ky",
+    "k63if887cEhvqmxYd48hds5L694394osgEDgzndq2tYSJGfuinhLPJoVtht5JXARX6dqWdjDY2iqCAXMCABv5n4",
+    "8mx7GjwNnsR6GWnswbTRSTGH2Fojx1pyouxs9yqHE3xvYDmXTQShEhZtmhX43ztjwxegKu7UTAUsMxAYsDdrFH2",
+    "5Wnd3zsW718gGFcFPbEAMEQrFzUfk3bp99ypvZHjQLBtCRqDGEPRqwREGxNyXLf2kR6RNU9BJBJCH8LDxEYjhDQe",
+    "4oZuymmiW7nLGSkSomKBJZFHdSuAYk8NzJymDqYq2aXowbtvrpKnmyyCTPUxNk7AmHtJdcHdf18SxfQKpRx93Fs9",
+    "2ChjT6Q9jvCQL97DinsYo6xsVH5TLMe7LGLSrVTDQ8dNj8M79TTEBwADD4Dh5Fc4MwUV2Y9F1693xdhBjp2mfrEW",
+    "3BXf4CmHHgHCV48sPkBMsMVMjhDNhqmj69nURaYsLTZPx8vAixi6t9tgYKfa1TrwzQYforHiK331KJRAFXgBUbsu",
+    "2Bg5QdJvkG2JDnfbvkC78YvKbiKHUnvhAsqbcKEuJ3KmyESPMfibUYQ9fAZECe8yjKDMirmuP6xczNQiL8MZ5HZk"
+  ],
+  "checks": [
+    "real RPC and block time",
+    "atomic launch",
+    "excess and token claim",
+    "underfunded refund"
+  ]
+}

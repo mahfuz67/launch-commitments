@@ -1,0 +1,129 @@
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+[verify] devnet verified at api.devnet.solana.com; program 4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD; run directory private/public-proof
+{
+  "checkedAt": "2026-10-05T12:28:44.826Z",
+  "sent": "nothing",
+  "everyConfirmedTransactionFinalized": true,
+  "transactions": [
+    {
+      "id": "fund",
+      "signature": "5CrpYmxhLCjt1iWX5LuoXraHE7cGyZBzfNWtJGrDZ8TEEwqWMkpdQFV7zZP4KkrGdq5sY137Vi1yJGbkrWLsN3fV",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "create:expiry",
+      "signature": "3bt68zTjoM9Kauj4CLGYW91NXBoQesdQCFV9ZtFxqwS8JXpnohbT9rwAwWWZpPs6Snfcm1wkiTkf1SF3XVJ5tLoT",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "create:launch",
+      "signature": "2dfxgajMc2xVUqG5Rvh2Q3qYisuB4BD7mpBbzHoYfucdDxHC8R8EXw6a8ftXEHWza26B4QNeZm7tBvU4T78eAse6",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "create:underfunded",
+      "signature": "3wCfznj38ygN5EGjSx5wYf4sxXyNNbsTq42GKDktKbJBkKJuQjh1KqSidftw7fQP9ofG2ALbgZ78VoJRnCgH3BMp",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "contribute:launch:alice",
+      "signature": "TERaJbMQBP38yJJPcqHkHwEwm3t7eAzdBjaEr7xMHvxs2WpseFN7AHF7vftziEsEeFR9qXUoY4UDby7ifpwchAX",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "contribute:launch:bob",
+      "signature": "5xkndb6xds7q5VNq3FR4Jd7xhiP9nHB278xZ7kCUBBkV4xK1cTp4j7KWoP4BWAou4JFzqszDtzzB9tN4JsKHMhEM",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "contribute:underfunded:alice",
+      "signature": "AdEMpG95oyT4mTzGTK6wqQRArmvdPdbQuFyXgAmfygRd7kfyvWM2ms2iW3g3PJ52cwRiGiSEi9qF82KujpmQ5FU",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "contribute:underfunded:bob",
+      "signature": "AwG1ZhtABd7g55vZdXhhpBSo5Wv6C6VpDFM6LQxTFRtrFFGSaH1ABgk79MJukEML2ziLVgDYpxXdgM9fRi4zMLw",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "contribute:expiry:alice",
+      "signature": "2hirr8q2DjWqrnSFJfVmjMtGjwV7apFgyLygzNEaeMDyr1jrvJfJ7inMWbA7FvcZAeBA3deLUc1UwyQCrSmBSATL",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "contribute:expiry:bob",
+      "signature": "2PvygQVnWNPrdDgdgoQmWwJL3xRaDun3aDimSHPeBi1QuivrxhjZXTq3W9HmaoZByKwxbUdncUgAXMiJpSYVT62g",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "withdraw:launch:bob",
+      "signature": "4BBJh5j7fqdpK9w4yoKZvQBSnCBkcbx9GUDV53Yp5c7fYofCnfExqgPzJQhtNEqr3bnXDaXSxfqhT5RMrXYgu4te",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "settle:launch",
+      "signature": "wzhSygj1xPeieLfh6kWzjgBajKXnQc4T6mrugoRk9V5bGjxJoSxRpqjv5SGUPYAxat2a4efJiRuXHeUWbAGeLEM",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "claim:launch:alice",
+      "signature": "2YLZxe1YvB9DhRk8CrQX33TD8Smu1t88otPVAJ8zj6HEF5ZgsfBmV9hWR2wbxSR7Z9pPBGnnc7aDTBH5BxFwDX1D",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "claim:launch:bob",
+      "signature": "4MiLqRvTBqLGNGuBkbZCjPBrQk59Vx3EEP9Ae1d49hmcfGYxZuJLk4ncPM3ieKzH86q1HrRDt8iHDiFEF22Bjjgx",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "refund:underfunded:alice",
+      "signature": "2YYCHQBymCK9Vv41ymbKfDKNrsjFBEcNawKtjGHg1CkSnDXv2RbS4HuAVRkeVboLpLc18n5oMMsP3xmNK5HT9Rfq",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "recover:underfunded:bob",
+      "signature": "4b8EDpkmVsN8qWMxvpVgUFGiv5zU1L7bRctaLKi13Y3QbUK1vE7yeuRAnChYRYjLCsW9noih4kLa5CqbJ3HAzp9Y",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "recover:expiry:alice",
+      "signature": "4qKmWA6UdS8oitnpksAyWieyb6yGDGCvPb7vqzD3SS6JTFSjnLiEBPGu628DRWPLNem2c7JPmmimmzM4qCy4hneX",
+      "recorded": "confirmed",
+      "now": "finalized"
+    },
+    {
+      "id": "recover:expiry:bob",
+      "signature": "2LsbjhAUSrMVof9ozJhvMjMa1KyBMGpMWJqDzKgFLzE6eNRJDzhh6jfMZGpZR34UcBJEYNesvGNhbpYfPGnXtokU",
+      "recorded": "confirmed",
+      "now": "finalized"
+    }
+  ],
+  "programUnchangedSinceRunStarted": true,
+  "program": {
+    "lastDeployedSlot": 507726160,
+    "deployedSha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+    "upgradeAuthority": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV"
+  },
+  "programAtRunStart": {
+    "lastDeployedSlot": 507726160,
+    "deployedSha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+    "upgradeAuthority": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV"
+  },
+  "secondRefundsStillRefused": true
+}

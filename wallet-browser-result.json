@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "network": "local validator",
+  "wallet": "simulated Wallet Standard provider; no real extension claimed",
+  "flows": [
+    "connect",
+    "create with preserved co-signature",
+    "contribute",
+    "withdraw"
+  ],
+  "errors": []
+}

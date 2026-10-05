@@ -1,0 +1,14 @@
+{
+  "scope": "LiteSVM only; captured deployed DBC bytecode from ../fixtures; in-memory throwaway keys; no network",
+  "programSha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+  "rentFloorLamports": "890880",
+  "minSetupBudgetLamports": "50000000",
+  "migrationQuoteThreshold": "10413226765",
+  "settle": {
+    "bytes": 870,
+    "computeUnits": 207204,
+    "budgetSpentLamports": "29077360",
+    "tokensBought": "251524373825075",
+    "minTokens": "250266751955949"
+  }
+}

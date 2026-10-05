@@ -1,0 +1,37 @@
+{
+  "name": "launch-commitments",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "app": "vite",
+    "build": "vite build",
+    "local": "node runtime/server.cjs",
+    "app:devnet": "VITE_NETWORK=devnet vite",
+    "api:devnet": "node runtime/devnet-server.cjs",
+    "build:devnet": "VITE_NETWORK=devnet vite build",
+    "test:core": "node --test tests/*.test.cjs sdk/selftest.test.cjs",
+    "test:browser": "node tests/browser.cjs",
+    "validator": "node runtime/start-validator.cjs",
+    "deploy:plan": "node deploy-devnet.cjs"
+  },
+  "dependencies": {
+    "@meteora-ag/cp-amm-sdk": "1.5.1",
+    "@meteora-ag/dynamic-bonding-curve-sdk": "1.5.13",
+    "@solana/kit": "8.0.0",
+    "@solana/spl-token": "0.4.15",
+    "@solana/web3.js": "1.98.4",
+    "@wallet-standard/app": "1.1.1",
+    "bn.js": "5.2.5",
+    "bs58": "6.0.0",
+    "buffer": "6.0.3",
+    "litesvm": "1.5.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.1",
+    "playwright": "1.58.2",
+    "vite": "8.3.2"
+  }
+}

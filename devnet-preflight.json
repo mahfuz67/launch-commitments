@@ -1,0 +1,36 @@
+{
+  "capturedAt": "2026-10-05T10:21:11.687Z",
+  "network": "devnet",
+  "readOnly": true,
+  "programs": [
+    {
+      "name": "dbc",
+      "address": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+      "programData": "HUfnSSiJxgspQm6C1rkqv6L3XgVtn7AESApgCQpCXCYh",
+      "sha256": "f5ccbb01e37165d16108bda0259fb3acbfca29305e23098c3b248e50c22979f0",
+      "matchesOriginalFixture": false,
+      "bytes": 1983568
+    },
+    {
+      "name": "damm",
+      "address": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+      "programData": "AUh8bm2XsMfex3KjYGcM3G4uBqUNSDw6HEhWaWMYnyPH",
+      "sha256": "82bb9375921bb8007551cb65f9ca43b191597496cc9922926468b36671081ec2",
+      "matchesOriginalFixture": false,
+      "bytes": 1559448
+    },
+    {
+      "name": "metaplex",
+      "address": "metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s",
+      "programData": "PwDiXFxQsGra4sFFTT8r1QWRMd4vfumiWC1jfWNfdYT",
+      "sha256": "bb0842f6d5740eabe8f9fb3b723b9ecd89cadf9f48ef9ad6a9dc6cfa8a9658e4",
+      "matchesOriginalFixture": false,
+      "bytes": 1295344
+    }
+  ],
+  "payer": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV",
+  "migrationConfigPresent": true,
+  "migrationConfigOwner": "cpamdpZCGKUy5JxQXB4dcpGPiikHawvSWAd6mEn1sGG",
+  "dbcAuthorityLamports": 99196635387,
+  "payerLamports": 0
+}

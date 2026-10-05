@@ -1,0 +1,18 @@
+{
+  "network": "devnet",
+  "status": "deployed; bytecode verified (application evidence recorded separately)",
+  "programId": "4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD",
+  "payer": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV",
+  "programData": "2ZS3LGRaNBJrkoVddkEgUapmWE9MHnoJA8o2bkAWFbjx",
+  "upgradeAuthority": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV",
+  "upgradeable": true,
+  "lastDeploySlot": "507726160",
+  "sha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+  "bytes": 98728,
+  "checkedAt": "2026-10-05T12:26:54.849Z",
+  "deployedSha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+  "deploymentSignature": "3knGEvX11wAHCHY2x7otkUHTLk58RS2MMojU9YkRZ58EV4G7fK7RrXui978WKt48EUhQYnrwSfnVz6pTJoD9mqsR",
+  "deployedAt": "2026-10-05T12:06:49.000Z",
+  "upgradeAuthorityRetained": true,
+  "explorer": "https://explorer.solana.com/address/4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD?cluster=devnet"
+}

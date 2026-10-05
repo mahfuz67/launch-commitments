@@ -1,0 +1,17 @@
+node_modules/
+dist/
+private/
+program/target/
+program/build/*keypair.json
+*.log
+browser-*.png
+
+.cache/
+demo/raw/
+fixtures-devnet/
+
+claude-*.md
+evidence/claude-*-result.json
+evidence/*-install.log
+evidence/faucet-guide.html
+work/

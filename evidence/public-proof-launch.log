@@ -1,0 +1,54 @@
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+[launch] devnet verified at api.devnet.solana.com; program 4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD; run directory private/public-proof
+[launch] test wallets written to private/public-proof/ (mode 0600); evidence at private/public-proof/public-evidence.json
+[launch] funding key funds the three test wallets: 5CrpYmxhLCjt1iWX5LuoXraHE7cGyZBzfNWtJGrDZ8TEEwqWMkpdQFV7zZP4KkrGdq5sY137Vi1yJGbkrWLsN3fV
+[launch] organizer creates the expiry campaign: 3bt68zTjoM9Kauj4CLGYW91NXBoQesdQCFV9ZtFxqwS8JXpnohbT9rwAwWWZpPs6Snfcm1wkiTkf1SF3XVJ5tLoT
+[launch] organizer creates the underfunded campaign: 3wCfznj38ygN5EGjSx5wYf4sxXyNNbsTq42GKDktKbJBkKJuQjh1KqSidftw7fQP9ofG2ALbgZ78VoJRnCgH3BMp
+[launch] organizer creates the launch campaign: 2dfxgajMc2xVUqG5Rvh2Q3qYisuB4BD7mpBbzHoYfucdDxHC8R8EXw6a8ftXEHWza26B4QNeZm7tBvU4T78eAse6
+[launch] alice contributes 0.018 SOL to the launch campaign: TERaJbMQBP38yJJPcqHkHwEwm3t7eAzdBjaEr7xMHvxs2WpseFN7AHF7vftziEsEeFR9qXUoY4UDby7ifpwchAX
+[launch] bob contributes 0.014 SOL to the launch campaign: 5xkndb6xds7q5VNq3FR4Jd7xhiP9nHB278xZ7kCUBBkV4xK1cTp4j7KWoP4BWAou4JFzqszDtzzB9tN4JsKHMhEM
+Server responded with 429 Too Many Requests.  Retrying after 500ms delay...
+Server responded with 429 Too Many Requests.  Retrying after 1000ms delay...
+[launch] alice contributes 0.004 SOL to the underfunded campaign: AdEMpG95oyT4mTzGTK6wqQRArmvdPdbQuFyXgAmfygRd7kfyvWM2ms2iW3g3PJ52cwRiGiSEi9qF82KujpmQ5FU
+Server responded with 429 Too Many Requests.  Retrying after 500ms delay...
+Server responded with 429 Too Many Requests.  Retrying after 1000ms delay...
+Server responded with 429 Too Many Requests.  Retrying after 2000ms delay...
+[launch] bob contributes 0.003 SOL to the underfunded campaign: AwG1ZhtABd7g55vZdXhhpBSo5Wv6C6VpDFM6LQxTFRtrFFGSaH1ABgk79MJukEML2ziLVgDYpxXdgM9fRi4zMLw
+[launch] alice contributes 0.012 SOL to the expiry campaign: 2hirr8q2DjWqrnSFJfVmjMtGjwV7apFgyLygzNEaeMDyr1jrvJfJ7inMWbA7FvcZAeBA3deLUc1UwyQCrSmBSATL
+[launch] bob contributes 0.01 SOL to the expiry campaign: 2PvygQVnWNPrdDgdgoQmWwJL3xRaDun3aDimSHPeBi1QuivrxhjZXTq3W9HmaoZByKwxbUdncUgAXMiJpSYVT62g
+[launch] bob withdraws 0.002 SOL from the launch campaign before close: 4BBJh5j7fqdpK9w4yoKZvQBSnCBkcbx9GUDV53Yp5c7fYofCnfExqgPzJQhtNEqr3bnXDaXSxfqhT5RMrXYgu4te
+[launch] ok: terms:launch
+[launch] ok: terms:underfunded
+[launch] ok: terms:expiry
+[launch] refused as expected (FundingStillOpen): launching before the funding window closes
+[launch] refused as expected (RefundNotAvailable): refunding before the funding window closes
+[launch] waiting for the funding windows to close: 111s of chain time left
+[launch] waiting for the funding windows to close: 90s of chain time left
+[launch] waiting for the funding windows to close: 67s of chain time left
+[launch] waiting for the funding windows to close: 46s of chain time left
+[launch] waiting for the funding windows to close: 24s of chain time left
+[launch] waiting for the funding windows to close: 2s of chain time left
+[launch] ok: at-close:launch
+[launch] ok: at-close:underfunded
+[launch] ok: at-close:expiry
+[launch] refused as expected (FundingClosed): contributing after the funding window closed
+[launch] refused as expected (TargetNotReached): launching the underfunded campaign
+[launch] refused as expected (RefundNotAvailable): refunding a funded campaign before its expiry
+[launch] bob, a contributor and not the organizer, executes the launch: wzhSygj1xPeieLfh6kWzjgBajKXnQc4T6mrugoRk9V5bGjxJoSxRpqjv5SGUPYAxat2a4efJiRuXHeUWbAGeLEM
+[launch] ok: launch:settled
+[launch] alice claims tokens and excess SOL: 2YLZxe1YvB9DhRk8CrQX33TD8Smu1t88otPVAJ8zj6HEF5ZgsfBmV9hWR2wbxSR7Z9pPBGnnc7aDTBH5BxFwDX1D
+[launch] ok: claim:launch:alice
+[launch] bob claims tokens and excess SOL: 4MiLqRvTBqLGNGuBkbZCjPBrQk59Vx3EEP9Ae1d49hmcfGYxZuJLk4ncPM3ieKzH86q1HrRDt8iHDiFEF22Bjjgx
+[launch] ok: claim:launch:bob
+[launch] ok: launch:pro-rata
+[launch] refused as expected (InvalidAccountOwner): claiming a second time
+[launch] alice recovers her contribution from the underfunded campaign: 2YYCHQBymCK9Vv41ymbKfDKNrsjFBEcNawKtjGHg1CkSnDXv2RbS4HuAVRkeVboLpLc18n5oMMsP3xmNK5HT9Rfq
+[launch] ok: refund:underfunded:alice
+[launch] refused as expected (InvalidAccountOwner): refunding a second time
+[launch] ok: underfunded:first-refund
+
+Launch phase complete. Evidence: private/public-proof/public-evidence.json
+Next: stop the backend, then run
+  node tests/public-devnet.cjs --phase refund-recovery --execute
+After that, the funded campaign expires at chain time 1791203294 (about 571s from now):
+  node tests/public-devnet.cjs --phase expiry-recovery --execute

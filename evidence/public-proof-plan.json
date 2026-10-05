@@ -1,0 +1,48 @@
+[plan] devnet verified at api.devnet.solana.com; program 4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD; run directory private/public-proof
+{
+  "network": "devnet",
+  "genesisHash": "EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG",
+  "rpcHost": "api.devnet.solana.com",
+  "backend": "http://127.0.0.1:19190",
+  "program": {
+    "programId": "4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD",
+    "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "audited": false,
+    "programData": "2ZS3LGRaNBJrkoVddkEgUapmWE9MHnoJA8o2bkAWFbjx",
+    "lastDeployedSlot": 507726160,
+    "upgradeAuthority": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV",
+    "deployedSha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+    "localBuildSha256": "1e8d66705b2ee91c504552fb7e55cf26fb046d54aec26e0aed54e1c48b9e6e4b",
+    "upgradeable": true,
+    "matchesLocalBuild": true
+  },
+  "fundingKey": "BuJR5G8kdNrkvHVPJ5R4ozub2ydkY8jAc6zadAGk1AFV",
+  "fundingKeyIsUpgradeAuthority": true,
+  "fundingKeyBalanceLamports": "4496224800",
+  "fundingPlan": {
+    "campaigns": [
+      "launch",
+      "underfunded",
+      "expiry"
+    ],
+    "setupBudgetLamports": "100000000",
+    "creationCostLamports": "110170000",
+    "receiptRentLamports": "1097280",
+    "tokenAccountRentLamports": "1488440",
+    "rentFloorLamports": "650240",
+    "perWalletLamports": {
+      "organizer": "333510000",
+      "alice": "41780280",
+      "bob": "34780280"
+    },
+    "totalLamports": "410070560",
+    "payerMustHoldLamports": "420075560",
+    "notRecoverableLamports": "353486880",
+    "note": "Setup budget and account rent of every campaign stay locked in this version, including the campaign that fails. The launch target is spent on tokens."
+  },
+  "sufficient": true,
+  "shortfallLamports": "0",
+  "runDirectory": "private/public-proof",
+  "existingRun": null,
+  "sent": "nothing; this is a read-only plan"
+}

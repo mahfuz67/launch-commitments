@@ -1,0 +1,38 @@
+{
+  "network": "local rehearsal",
+  "duration": 75.544,
+  "scenes": [
+    {
+      "start": 0.17,
+      "text": "Launch on agreed terms. Or recover funds."
+    },
+    {
+      "start": 3.681,
+      "text": "01 / Publish fixed launch terms"
+    },
+    {
+      "start": 11.413,
+      "text": "02 / Fund together, before the deadline"
+    },
+    {
+      "start": 18.531,
+      "text": "03 / Anyone can execute the agreed launch"
+    },
+    {
+      "start": 25.13,
+      "text": "04 / Claim tokens and excess SOL"
+    },
+    {
+      "start": 32.791,
+      "text": "05 / Continue through DBC into DAMM"
+    },
+    {
+      "start": 50.297,
+      "text": "06 / Failed launch? Recover your contribution"
+    },
+    {
+      "start": 71.04,
+      "text": "Try the working local rehearsal"
+    }
+  ]
+}

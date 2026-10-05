@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "network": "local validator only",
+  "rpc": "127.0.0.1:18899",
+  "programId": "4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD",
+  "genesisGuard": "devnet mode refused a non-devnet node with 503 on state and prepare",
+  "environment": {
+    "genesisHash": "p5a6ghw27GBWBrYq5ekkrtdbsZbxPpzwsDkYcjg4ynY",
+    "rpcHost": "127.0.0.1:18899",
+    "preset": {
+      "decimals": 6,
+      "supply": "1000000000000000",
+      "migrationThreshold": "10413226765",
+      "creatorTradingFeePercentage": 100,
+      "setupBudgetLamports": "100000000",
+      "settlementWindowSeconds": "600"
+    }
+  },
+  "create": {
+    "bytes": 883,
+    "computeSimulated": 55420,
+    "costLamports": "113930000",
+    "quote": {
+      "expectedTokens": "251524373825075",
+      "minimumTokens": "251499221387692",
+      "decimals": 6
+    }
+  },
+  "fundingChecks": "create, contribute, partial withdraw, state and failure cases passed",
+  "waitedSeconds": 26,
+  "settle": {
+    "bytes": 870,
+    "computeSimulated": 255390
+  },
+  "migration": {
+    "bytes": 1139,
+    "computeSimulated": 161128,
+    "dammSaleBytes": 619
+  },
+  "lifecycle": "settle by a stranger, two claims, a DBC buy, graduation, migration, a DAMM v2 sale and an underfunded refund all confirmed over HTTP"
+}

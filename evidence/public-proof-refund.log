@@ -1,0 +1,10 @@
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+[refund-recovery] devnet verified at api.devnet.solana.com; program 4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD; run directory private/public-proof
+[refund-recovery] ok: recover:underfunded:bob:cli-sees-refund
+[refund-recovery] bob recovers 0.003 SOL from the underfunded campaign with recover.cjs: 4b8EDpkmVsN8qWMxvpVgUFGiv5zU1L7bRctaLKi13Y3QbUK1vE7yeuRAnChYRYjLCsW9noih4kLa5CqbJ3HAzp9Y
+[refund-recovery] ok: recover:underfunded:bob
+[refund-recovery] ok: underfunded:fully-refunded
+
+Refund recovery complete without the backend. Evidence: private/public-proof/public-evidence.json
+Keep the backend stopped and run, once the funded campaign has expired:
+  node tests/public-devnet.cjs --phase expiry-recovery --execute

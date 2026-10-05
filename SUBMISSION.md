@@ -36,7 +36,7 @@ Every frame must label the network. Do not present local signatures as devnet or
 - [x] Public devnet deployment and transaction manifest (launch, claims and both refund paths).
 - [ ] Test at least one real wallet extension end to end.
 - [ ] Independent review and production dependency decisions.
-- [ ] Public source repository and hosted evidence page.
+- [x] [Public source repository](https://github.com/mahfuz67/launch-commitments) and [hosted evidence page](https://mahfuz67.github.io/launch-commitments/).
 - [ ] Hosted transactional product (the app currently runs locally against devnet).
 - [ ] Independent usage evidence, if obtained; never substitute self-trading.
 - [x] Captioned local demonstration video.

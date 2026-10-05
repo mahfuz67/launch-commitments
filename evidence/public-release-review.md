@@ -18,3 +18,7 @@ Claude Code (claude-opus-5-5) produced the public harness and comparison documen
 ## Remaining limits
 
 Real wallet-extension testing, independent audit, hosted transactional service, customer adoption and mainnet deployment are outstanding. Devnet wallets are developer-controlled. The upgrade authority can replace the program. Public proof data names exactly which transactions ran; no local-only migration is represented as public execution.
+
+## Completed public proof
+
+All three campaigns completed successfully: 18 finalized transactions, 21 passing evidence checks, 11 simulated refusals and no recorded warnings. A separate read-only verification confirmed unchanged deployed bytecode and transaction finality. GitHub Pages published the evidence successfully. Hosted CI did not start due to an account-level restriction; the passing core/Rust/build results are local verification, not a green hosted CI run.

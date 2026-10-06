@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Launch Commitments — submission package</title><style>body{font:16px/1.65 system-ui;background:#f5f6ee;color:#20251e;margin:0}main{max-width:980px;margin:auto;padding:40px 24px}h1{font-size:42px;letter-spacing:-.04em;line-height:1.1}h2{margin-top:36px}a{color:#315a24}nav{display:flex;gap:22px;flex-wrap:wrap}.note{padding:20px;background:#e5edda;border-left:4px solid #77935e}textarea{box-sizing:border-box;width:100%;min-height:550px;padding:22px;font:15px/1.65 system-ui;border:1px solid #cad0c1;border-radius:8px;background:white;color:#20251e}button{background:#315a24;color:white;border:0;padding:10px 18px;border-radius:6px;font:inherit;margin-bottom:12px;cursor:pointer}li{margin:8px 0}.small{font-size:13px;color:#566050}details{margin:24px 0}summary{cursor:pointer;font-weight:650}</style><main><p class="small">METEORA DBC BOUNTY · PREPARED 6 OCTOBER 2026</p><h1>Launch Commitments</h1><p>Agree on a Meteora launch. Execute it together—or recover your contribution.</p><nav><a href="../">Public evidence</a><a href="../app/">Interactive devnet app</a><a href="https://github.com/mahfuz67/launch-commitments">Source</a></nav><p class="note">Prepared for review, not submitted. Devnet tests are developer-operated. No mainnet traction, independent audit or new asset class is claimed.</p><h2>Project description and links</h2><button onclick="copyText('entry',this)">Copy entry</button><textarea id="entry" aria-label="Submission entry"># Launch Commitments
+
+**Agree on a Meteora launch. Execute it together—or recover your contribution.**
+
+## Project description
+
+Launch Commitments is a coordination layer for communities that want to fund a token launch before the token exists. A shared wallet makes contributors depend on its operator to launch, distribute tokens or issue refunds. Our prototype encodes those actions in a Solana program.
+
+An organizer publishes a funding target, curve configuration, minimum token output, fee beneficiary and deadlines. Contributors deposit SOL into a campaign vault and can withdraw before funding closes. If the target is met, anyone can execute one transaction that creates the token, creates its Meteora DBC pool and makes the agreed collective first purchase. Contributors claim proportional tokens and excess SOL. If funding falls short—or a funded launch never executes before expiry—each contributor can recover their recorded principal without the organizer or website.
+
+Meteora DBC is the issuance and initial pricing mechanism, rather than an incidental integration. The same public campaign subsequently graduated into DAMM v2, where a 1,000-token sale was confirmed. The program separates contributed principal from organizer-funded setup costs, verifies the committed DBC configuration, and rejects a launch whose initial purchase falls below the published minimum. Atomic execution means a failed step rolls back the transaction.
+
+The public devnet proof records successful launch and allocation, underfunded refunds, and funded-expiry refunds with the app server switched off. The repository includes the Rust program, transaction-building SDK, application, tests, transaction receipts and standalone recovery tool. All recorded activity is from developer-controlled wallets using test tokens.
+
+Shared launches and escrow have precedents. Our contribution is this specific DBC execution-or-refund workflow, not a claim to have invented pooled launches. The deployment retains an upgrade authority and has not received an independent audit. No mainnet usage, external customers or new asset class is claimed. Next steps are outside-user validation and further security review before considering a narrowly scoped mainnet pilot.
+
+## Links
+
+- Interactive devnet app: https://mahfuz67.github.io/launch-commitments/app/
+- Guided two-minute walkthrough: https://mahfuz67.github.io/launch-commitments/walkthrough/
+
+- Source: https://github.com/mahfuz67/launch-commitments
+- Public transaction proof: https://mahfuz67.github.io/launch-commitments/
+- Program: https://explorer.solana.com/address/4WcS5bp77ayc8ZE2dQ47z9qi3KFPFgZz6f9XEzSjojqD?cluster=devnet
+- Comparison: https://github.com/mahfuz67/launch-commitments/blob/main/COMPARISON.md
+- Reproduction: https://github.com/mahfuz67/launch-commitments/blob/main/PUBLIC-DEMO.md
+
+## Team
+
+Mahfuz Bello — builder. Development and internal review assisted by Codex and Claude Code. This is not an external security audit.
+
+## Submission status
+
+Prepared, not submitted. The listing was open on 6 October 2026. Its entry form requires sign-in, so account-specific fields and declarations have not yet been verified. The listing&#x27;s criteria are qualitative; generic skill scoring percentages are not the sponsor&#x27;s scoring rubric. Migration evidence is complete. The hosted app is available for devnet use. A real Phantom connection has been observed; the signed end-to-end wallet test remains pending. Do not represent that unfinished test as complete.
+</textarea><h2>Short demonstration script</h2><button onclick="copyText('script',this)">Copy script</button><textarea id="script" aria-label="Demo script"># Product walkthrough — target 2 minutes 30 seconds
+
+Use the actual hosted devnet app. Label any older local recording as local; do not splice it into a claimed public execution. Cut waiting periods with a visible “after the funding deadline” caption.
+
+0:00–0:15 — Open the app: “A community wants to launch together. Their contributions should execute the agreed launch—or be recoverable without the organizer.”
+
+0:15–0:35 — Show target, minimum output, deadline and fee recipient. “These are the terms contributors see before signing. Setup costs are paid separately by the organizer.”
+
+0:35–0:55 — Show a contribution and withdrawal/receipt. “Contributors keep their own wallet keys and can withdraw before the window closes.”
+
+0:55–1:20 — Show the successful public campaign and its launch receipt. “A contributor executed token creation, the DBC pool and the first purchase in one transaction. The organizer did not sign. Each contributor then claimed a proportional allocation and excess SOL.”
+
+1:20–1:40 — Show graduation, the DAMM pool and a sale receipt only after public verification. “The token continues through Meteora&#x27;s lifecycle into DAMM v2.”
+
+1:40–2:05 — Show the underfunded and expired campaigns, refund totals and standalone recovery receipts. “No launch means recovery under the published rules. These refunds executed with the app server switched off.”
+
+2:05–2:30 — Show source and limitations. “This is an open-source devnet prototype with developer-run evidence. It is upgradeable and unaudited; refunds do not cover trading losses. Try the workflow and inspect every transaction.”
+</textarea><h2>Before sending</h2><ul><li>Confirm the hosted app and transaction links load.</li><li>Complete and record the real Phantom signing test; do not count the simulated provider test as equivalent.</li><li>Sign in to Superteam and verify the actual form fields, eligibility declarations and closing time.</li><li>Review the final public links and attach the demonstration.</li><li>Keep developer test activity separate from users or organic volume.</li></ul><details><summary>Evidence boundaries</summary><p>The October 5 manifest records launch and refunds. The October 6 migration manifest extends the same campaign through DBC graduation and a DAMM v2 sale. The program remains upgradeable. Customer demand is unvalidated. Public code and a working demo do not guarantee prize placement.</p></details><p class="small">The sponsor’s own listing controls requirements. No generic judging weights or implied mainnet requirement have been substituted.</p></main><script>async function copyText(id,b){try{await navigator.clipboard.writeText(document.getElementById(id).value);b.textContent='Copied'}catch{b.textContent='Select text and copy manually'}}</script></html>

@@ -22,7 +22,7 @@ Every frame must label the network. Do not present local signatures as devnet or
 
 | Criterion from the [bounty](https://superteam.fun/earn/listing/meteora-dbc) | Evidence we can present | Still missing |
 |---|---|---|
-| Meaningful Meteora integration | DBC is the issuance and first purchase; actual migration and DAMM trading execute. | Public-network graduation/migration evidence; current public proof covers launch and refunds. |
+| Meaningful Meteora integration | DBC is the issuance and first purchase; actual migration and DAMM trading execute. | Real-wallet extension signing evidence. |
 | Technical execution and robustness | Segregated principal/budget; fixed CPI targets; permissionless execution; refunds independent of DBC; hostile tests, validator test, wallet and recovery flows. | Independent security review and dependency remediation. |
 | Originality and taste | One enforceable workflow spanning pre-launch commitment through migration; terms and failure recovery are visible to users. | Originality is moderate; shared entry and escrow have clear predecessors. |
 | Impact and new asset classes | Removes operator dependence from a specific coordination step. | No independent demand or new-asset adoption proven. |
@@ -37,10 +37,10 @@ Every frame must label the network. Do not present local signatures as devnet or
 - [ ] Test at least one real wallet extension end to end.
 - [ ] Independent review and production dependency decisions.
 - [x] [Public source repository](https://github.com/mahfuz67/launch-commitments) and [hosted evidence page](https://mahfuz67.github.io/launch-commitments/).
-- [ ] Hosted transactional product (the app currently runs locally against devnet).
+- [x] Hosted browser app that talks directly to devnet: https://mahfuz67.github.io/launch-commitments/app/
 - [ ] Independent usage evidence, if obtained; never substitute self-trading.
 - [x] Captioned local demonstration video.
-- [ ] Final public-network demo and pitch assets.
+- [x] Public-network guided walkthrough, entry text and narration script. A new narrated video is not included.
 - [ ] Mainnet decision and funding, if warranted.
 - [ ] Final bounty form, links and submission.
 

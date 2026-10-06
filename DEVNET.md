@@ -104,7 +104,7 @@ One transaction creates a fresh DBC config from `runtime/preset.cjs` and the cam
 
 ## Constraints and open items
 
-- **Devnet dependencies were inspected read-only on 5 October 2026.** DBC, DAMM v2, Metaplex, the migration config and funded pool authority exist. Fourteen tests pass locally with captured devnet binaries. The public launch/recovery proof is documented separately in PUBLIC-DEMO.md; graduation and migration remain local-only tests.
+- **Devnet dependencies were inspected read-only on 5 October 2026.** DBC, DAMM v2, Metaplex, the migration config and funded pool authority exist. Fourteen tests pass locally with captured devnet binaries. The public launch/recovery proof is documented separately in PUBLIC-DEMO.md; the same public campaign subsequently passed graduation, DAMM v2 migration and a DAMM sale on 6 October (evidence/public-migration.json).
 - **Public RPC limits.** `getProgramAccounts` and bursts of requests may be throttled on the default endpoint. State makes one batched account read per 25 campaigns after the listing call.
 - **Blockhash expiry.** A prepared transaction must be signed and sent before its blockhash expires, roughly a minute.
 - **Open relay on localhost.** `/api/send` forwards any signed transaction to the configured cluster. It is reachable only from this machine and the two allowed origins.

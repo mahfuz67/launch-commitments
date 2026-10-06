@@ -5,11 +5,11 @@ root=Path(__file__).resolve().parents[1]
 workspace=root.parents[1]
 release=workspace/'work'/'launch-commitments-release'
 release.mkdir(exist_ok=True)
-folders=['app','runtime','sdk','tests','fixtures','fixtures-devnet','docs','.github','tools','demo']
+folders=['app','runtime','sdk','tests','fixtures','fixtures-devnet','docs','.github','tools','demo','submission']
 files=['.gitignore','brand.md','DEPENDENCIES.md','dependency-audit.json','deploy-devnet.cjs','verify-deployment.cjs','deployment-plan.json','deployment.json','devnet-preflight.json','DEVNET.md','INTERFACE.md','LICENSE','package-lock.json','package.json','PRODUCT.md','PUBLIC-DEMO.md','COMPARISON.md','README.md','recover.cjs','SUBMISSION.md','THIRD_PARTY.md','vite.config.mjs','validator-result.json','browser-result.json','wallet-browser-result.json','browser-desktop.png','browser-mobile.png','wallet-browser.png']
 files+=['program/Cargo.lock','program/Cargo.toml','program/IMPLEMENTATION-NOTES.md','program/REVIEW-RESPONSE.md','program/selftest-result.json','program/build/launch_commitments.so']
 folders+=['program/src']
-allowed_evidence=['public-proof-verification.log','public-release-review.md','public-prep-core-tests.log','public-prep-api-tests.log','public-prep-build.log','devnet-deployment-verified.log','deployment-buffer-recovered.json','public-proof-plan.json','public-proof-launch.log','public-proof-refund.log','public-proof-expiry.log','claude-public-review.md','claude-public-cross-review.md']
+allowed_evidence=['hosted-release-review.md','hosted-core-tests.log','hosted-build.log','claude-hosted-review.md','public-migration.json','public-migration.log','public-proof-verification.log','public-release-review.md','public-prep-core-tests.log','public-prep-api-tests.log','public-prep-build.log','devnet-deployment-verified.log','deployment-buffer-recovered.json','public-proof-plan.json','public-proof-launch.log','public-proof-refund.log','public-proof-expiry.log','claude-public-review.md','claude-public-cross-review.md']
 files+=['evidence/'+x for x in allowed_evidence]
 for folder in folders:
     if (root/folder).exists():

@@ -6,7 +6,7 @@
   "migrationQuoteThreshold": "10413226765",
   "settle": {
     "bytes": 870,
-    "computeUnits": 207204,
+    "computeUnits": 204204,
     "budgetSpentLamports": "29077360",
     "tokensBought": "251524373825075",
     "minTokens": "250266751955949"

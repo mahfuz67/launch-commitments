@@ -13,7 +13,8 @@
     "test:core": "node --test tests/*.test.cjs sdk/selftest.test.cjs",
     "test:browser": "node tests/browser.cjs",
     "validator": "node runtime/start-validator.cjs",
-    "deploy:plan": "node deploy-devnet.cjs"
+    "deploy:plan": "node deploy-devnet.cjs",
+    "build:hosted": "VITE_NETWORK=devnet VITE_DIRECT_RPC=true VITE_BASE_PATH=/launch-commitments/app/ vite build"
   },
   "dependencies": {
     "@meteora-ag/cp-amm-sdk": "1.5.1",

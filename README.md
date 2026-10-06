@@ -2,7 +2,7 @@
 
 A community funds a token launch on published terms. Once the window closes, anyone can execute the agreed DBC launch and first purchase in one transaction. Contributors claim proportional tokens and excess SOL. If the launch fails to fund or expires without executing, each contributor recovers their recorded principal without the organizer or our website.
 
-**Working end-to-end implementation; not yet a completed bounty submission.** The program, SDK, browser app, independent recovery CLI and RPC backend are implemented. Local execution, a separate Agave validator and browser flows pass. The reviewed program is deployed on public devnet; public launch, proportional claims, underfunded refunds and funded-expiry refunds have passed. [Inspect the public proof](https://mahfuz67.github.io/launch-commitments/). No mainnet deployment, audit, external users, organic volume or customer-demand validation is claimed.
+**Working end-to-end implementation; not yet a completed bounty submission.** The program, SDK, browser app, independent recovery CLI and RPC backend are implemented. Local execution, a separate Agave validator and browser flows pass. The reviewed program is deployed on public devnet; public launch, proportional claims, underfunded refunds, funded-expiry refunds, DBC graduation, DAMM v2 migration and a DAMM sale have passed. [Inspect the public proof](https://mahfuz67.github.io/launch-commitments/). No mainnet deployment, audit, external users, organic volume or customer-demand validation is claimed.
 
 A captioned local demonstration is in [demo/index.html](demo/index.html). It records actual application execution with test funds.
 

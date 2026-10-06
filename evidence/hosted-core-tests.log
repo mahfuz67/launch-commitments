@@ -1,0 +1,72 @@
+
+> launch-commitments@0.1.0 test:core
+> node --test tests/*.test.cjs sdk/selftest.test.cjs
+
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+✔ DBC preset config: created by the official SDK, decoded identically, accepted (38.056541ms)
+✔ funded and oversubscribed: settle once, claim pro rata, nothing left owed (101.049708ms)
+✔ underfunded: no settlement, every contributor refunds exactly their principal (27.454875ms)
+✔ funded but not settled before expiry: settlement closes, refunds open (17.300667ms)
+✔ settlement refuses substituted programs and accounts, then still works; pre-funded addresses do not block (80.78725ms)
+✔ lamports sent early to settlement addresses, synced or not, do not block settlement (21.261166ms)
+✔ forged program-owned accounts at non-canonical addresses are refused (19.82425ms)
+✔ one-lamport contributions: allocated by the same floor rule, never more than owed (37.375666ms)
+✔ creation rejects unsupported terms (52.820125ms)
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+✔ oversubscribed launch: any settler, real DBC purchase, exact pro-rata tokens and excess, one claim each (195.439ms)
+✔ underfunded round refunds full accounted principal at close, no DBC dependency (74.189625ms)
+✔ funded but abandoned launch becomes refundable exactly at expiry (79.85325ms)
+✔ withdrawals reopen receipt safely before close; deposit and withdrawal both reject at close (83.886667ms)
+✔ an impossible promised output rolls back mint, pool, principal and rent; expiry refund still works (65.298958ms)
+✔ direct donations do not buy entitlement, count toward the target, or increase refunds (57.565791ms)
+✔ substituted recipient cannot withdraw another contribution (50.957584ms)
+✔ substituted system program and settlement token destination are rejected (59.107625ms)
+✔ configuration bytes changed after funding cannot be settled, and refund remains available (57.421834ms)
+✔ random withdrawal/deposit schedules conserve accounted principal before a failed launch (185.539625ms)
+✔ deployment verifies actual reviewed bytes and discloses retained authority (43.737833ms)
+✔ deployment rejects byte substitution and nonzero trailing payload (1.742166ms)
+✔ deployment rejects substituted loader-owned accounts and malformed authority state (3.854ms)
+✔ validator legacy-loader deployment is verified without inventing an authority (1.349042ms)
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+✔ full lifecycle through the browser adapter, answering exactly as the server does (1654.386042ms)
+✔ a transaction the cluster never reports is returned as unknown, not confirmed and not failed (466.744708ms)
+✔ a transaction that lands and fails is reported as failed with its signature (79.169916ms)
+✔ a lost reply to the broadcast is resolved by the cluster status, whichever way it went (513.403334ms)
+✔ a node that refuses the broadcast, or cannot simulate, means nothing was sent (118.206125ms)
+✔ status errors while waiting do not turn into a result; the next answer does (83.515042ms)
+✔ reads give up after the route timeout; a send is never abandoned (214.042333ms)
+✔ every route refuses a node that is not devnet, before asking it anything else (45.36525ms)
+npm warn Unknown cli config "--skipwarn". This will stop working in the next major version of npm.
+✔ a signed transaction is not sent to a node that is not devnet (90.94575ms)
+✔ configuration: validator mode needs loopback and a private cluster; defaults are the pinned deployment (129.567667ms)
+✔ changed program bytecode stops every route, including a send that was prepared before the change (58.561333ms)
+✔ the bytecode is re-read on every call by default; the optional cache covers reads only (73.081834ms)
+✔ the adapter keeps the app helper contract: plain JSON in, plain JSON out, errors carry the body (50.61825ms)
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+✔ the Node sources are the versions the browser ports were written against (1.166083ms)
+✔ lc-browser exports the same names and constants as the SDK (130.88325ms)
+✔ lc-browser derives the same addresses and builds byte-identical instructions and transactions (559.406042ms)
+✔ lc-browser rejects bad arguments with the same errors (9.579917ms)
+✔ lc-browser decodes real accounts, checks the preset and hashes the config like the SDK (116.801709ms)
+✔ the browser preset is the curve the server uses (15.891375ms)
+✔ the pinned program, hash and size are the recorded deployment and the committed build (2.884ms)
+✔ the browser deployment guard accepts and refuses exactly what the server guard does (17.381833ms)
+✔ hashing fails closed where WebCrypto is unavailable (0.565833ms)
+✔ the browser modules use no Node built-ins, stored keys, page-supplied configuration or side channels (1.022083ms)
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+Lifecycle evidence {"settlement":{"bytes":870,"compute":206656},"migration":{"bytes":1139,"compute":143452},"dammTrade":{"bytes":619,"compute":33936}}
+Lifecycle evidence {"settlement":{"bytes":870,"compute":214155},"migration":{"bytes":1139,"compute":137494},"dammTrade":{"bytes":619,"compute":41448}}
+✔ launched allocation trades on DBC, graduates, migrates and trades on DAMM v2 (scale 1) (206.984542ms)
+✔ launched allocation trades on DBC, graduates, migrates and trades on DAMM v2 (scale 0.01) (105.364792ms)
+✔ unsynchronized SOL donation to precreated vault WSOL account cannot block settlement (74.700542ms)
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+✔ server-independent recovery discovers entitlement and refunds via chain accounts alone (155.636708ms)
+✔ Wallet Standard signing preserves message and config co-signature; altered or incomplete results reject (96.834542ms)
+ℹ tests 51
+ℹ suites 0
+ℹ pass 51
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3923.750375

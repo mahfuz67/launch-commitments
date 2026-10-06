@@ -112,7 +112,7 @@ Rounding dust, donations sent to program accounts, the unspent setup budget and 
 - **Not audited.** The program was reviewed only by the two agents that built it.
 - **Devnet only.** There is no mainnet deployment. The devnet preset scales the curve's SOL amounts by 0.01.
 - **Upstream dependence.** DBC and Metaplex are upgradeable programs run by others. Their instruction layouts are hard-coded here. If they change, launches fail; refunds do not depend on them.
-- **Evidence.** The devnet run uses test wallets created and funded by the build team. See [PUBLIC-DEMO.md](PUBLIC-DEMO.md) and the proof manifest for which paths ran on devnet and which were tested locally only. None of it is usage or demand.
+- **Evidence.** The devnet run uses test wallets created and funded by the build team. See [PUBLIC-DEMO.md](PUBLIC-DEMO.md), the original launch/refund proof manifest and the follow-up migration manifest for the paths executed on public devnet. None of it is usage or demand.
 
 ## Why DBC, given the alternatives
 

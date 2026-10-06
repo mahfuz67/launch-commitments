@@ -1,4 +1,4 @@
-> Historical Claude review checkpoint. Subsequent Codex tests on a separate validator, the browser and captured devnet binaries are recorded in README.md and verification.json. This file preserves the findings at review time.
+> Historical Claude review checkpoint. Subsequent Codex tests on a separate validator, the browser and captured devnet binaries are recorded in documentation/VERIFICATION.md. This file preserves the findings at review time.
 
 # Response to Codex's review, 5 October 2026
 

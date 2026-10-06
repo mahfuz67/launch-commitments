@@ -5,7 +5,7 @@ const {deploymentInfo}=require('./runtime/deployment-info.cjs');
 (async()=>{
  const connection=new Connection(process.env.LAUNCH_RPC_URL||'https://api.devnet.solana.com','confirmed');
  if(await connection.getGenesisHash()!=='EtWTRABZaYq6iMfeYKouRu166VU2xqa1wcaWoxPkrZBG')throw Error('Verification requires devnet.');
- const plan=JSON.parse(fs.readFileSync('deployment-plan.json','utf8')),programId=new PublicKey(plan.programId);
+ const plan=JSON.parse(fs.readFileSync('evidence/reports/deployment-plan.json','utf8')),programId=new PublicKey(plan.programId);
  const info=await deploymentInfo(connection,programId);
  const signatures=await connection.getSignaturesForAddress(programId,{limit:20});
  const deploy=signatures.find(s=>String(s.slot)===info.lastDeploySlot&&!s.err);

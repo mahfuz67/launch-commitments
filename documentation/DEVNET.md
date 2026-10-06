@@ -25,7 +25,7 @@ Settlement used about 202,000 compute units in LiteSVM and about 250,000 on the 
 
 ## Start
 
-From `work/launch-commitments`.
+From the repository root.
 
 Public devnet:
 
@@ -113,7 +113,7 @@ One transaction creates a fresh DBC config from `runtime/preset.cjs` and the cam
 
 ## Latest Codex verification
 
-On 5 October 2026, read-only devnet inspection confirmed DBC, DAMM v2, Metaplex, the fixed-tier migration configuration and a funded DBC pool authority. Captured binaries differ from the original fixtures; fourteen financial/lifecycle/recovery tests pass locally against those actual devnet binaries. See devnet-preflight.json and evidence/devnet-bytecode-tests.log. This was a read-only preflight before the subsequent public deployment documented in PUBLIC-DEMO.md.
+On 5 October 2026, read-only devnet inspection confirmed DBC, DAMM v2, Metaplex, the fixed-tier migration configuration and a funded DBC pool authority. Captured binaries differ from the original fixtures; fourteen financial/lifecycle/recovery tests pass locally against those actual devnet binaries. See evidence/reports/devnet-preflight.json and evidence/devnet-bytecode-tests.log. This was a read-only preflight before the subsequent public deployment documented in PUBLIC-DEMO.md.
 
 Wallet Standard browser signing now works in an automated test with a simulated provider against the local validator. A real extension remains to be tested. Run npm run app:devnet to use port 5181 with this backend.
 

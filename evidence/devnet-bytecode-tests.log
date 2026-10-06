@@ -1,0 +1,27 @@
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+✔ oversubscribed launch: any settler, real DBC purchase, exact pro-rata tokens and excess, one claim each (127.238875ms)
+✔ underfunded round refunds full accounted principal at close, no DBC dependency (47.858709ms)
+✔ funded but abandoned launch becomes refundable exactly at expiry (51.497708ms)
+✔ withdrawals reopen receipt safely before close; deposit and withdrawal both reject at close (52.948709ms)
+✔ an impossible promised output rolls back mint, pool, principal and rent; expiry refund still works (46.717333ms)
+✔ direct donations do not buy entitlement, count toward the target, or increase refunds (46.847333ms)
+✔ substituted recipient cannot withdraw another contribution (40.05025ms)
+✔ substituted system program and settlement token destination are rejected (47.106833ms)
+✔ configuration bytes changed after funding cannot be settled, and refund remains available (46.756959ms)
+✔ random withdrawal/deposit schedules conserve accounted principal before a failed launch (162.097958ms)
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+Lifecycle evidence {"settlement":{"bytes":870,"compute":215912},"migration":{"bytes":1139,"compute":140604},"dammTrade":{"bytes":619,"compute":38384}}
+Lifecycle evidence {"settlement":{"bytes":870,"compute":209911},"migration":{"bytes":1139,"compute":143646},"dammTrade":{"bytes":619,"compute":36896}}
+✔ launched allocation trades on DBC, graduates, migrates and trades on DAMM v2 (scale 1) (137.2195ms)
+✔ launched allocation trades on DBC, graduates, migrates and trades on DAMM v2 (scale 0.01) (81.853ms)
+✔ unsynchronized SOL donation to precreated vault WSOL account cannot block settlement (51.160625ms)
+bigint: Failed to load bindings, pure JS will be used (try npm run rebuild?)
+✔ server-independent recovery discovers entitlement and refunds via chain accounts alone (93.113041ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 866.11875
